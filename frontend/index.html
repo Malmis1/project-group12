@@ -6,25 +6,45 @@
     <link rel="stylesheet" type="text/css" href="pages/index/style.css"/>
     <link rel="stylesheet" type="text/css" href="resources/css/menu.css"/>
     <link rel="stylesheet" type="text/css" href="resources/css/style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script>
     </script>
 </head>
 
 <body>
-<ul>
-    <li class="left"><img src="resources/images/Java.png" alt="Logo" width="60" height="60"></li>
-    <li class="left"><select name="Category">
-        <option value="">Category</option>
-        <option value="cat1">cat1</option>
-        <option value="cat2">cat2</option>
-        <option value="cat3">cat3</option>
-        <option value="cat4">cat4</option>
-    </select></li>
-    <li class="left"><input type="text" placeholder="Search"/></li>
-    <li class="right"><a href="">Shopping cart</a></li>
-    <li class="right"><a href="">Login</a></li>
-    <li class="right"><a href="">Sign up</a></li>
-</ul>
+    <ul>
+        <li class="left"><img src="resources/images/Java.png" alt="Logo" width="40" height="60"></li>
+        <li class="left"><select name="Category">
+            <option value="">Category</option>
+            <option value="cat1">cat1</option>
+            <option value="cat2">cat2</option>
+            <option value="cat3">cat3</option>
+            <option value="cat4">cat4</option>
+        </select></li>
+        <li class="left">
+            <div class="menu-search-container">
+                <form id="menu-search-form" action="/search" method="get">
+                <button type="submit" class="menu-search-icon-button">
+                    <i class="fa fa-search"></i>
+                </button>
+                <input type="text" class="menu-search-bar" placeholder="Search for anything" name="query">
+                </form>
+            </div></li>
+        <li class="right"><a href="">Shopping cart</a></li>
+        <li class="right"><a href="">Login</a></li>
+        <li class="right"><a href="">Sign up</a></li>
+    </ul>
+
+    <div class="search-container">
+        <form id="search-form" action="/search" method="get">
+            <button type="submit" class="search-icon-button">
+                <i class="fa fa-search"></i>
+            </button>
+            <input type="text" class="search-bar" placeholder="Search for anything" name="query">
+        </form>
+    </div>
+
+
 
     <div class="slider-container">
         <h2>Most popular courses</h2>

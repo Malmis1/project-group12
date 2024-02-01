@@ -50,14 +50,35 @@ li select {
     color: black;
 }
 
-li input::placeholder {
-    color: black;
+.menu-search-container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin: auto;
 }
 
-li input {
-    border-radius: 25px;
-    border: 2px solid black;
-    background-color: transparent;
-    color: black;
+.menu-search-bar {
     width: 40vw;
+    padding: 10px 40px 10px 30px;
+    font-size: 16px;
+    border: 2px solid black;
+    color: black;
+    border-radius: 25px;
+    outline: none;
+    background: transparent;
 }
+
+.menu-search-icon-button {
+    font-size: 20px;
+    background: none;
+    border: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #333;
+    padding: 0 10px;
+}
+
+.menu-search-bar:focus {
+    border-color: #007bff;

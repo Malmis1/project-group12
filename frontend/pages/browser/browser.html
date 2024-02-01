@@ -20,7 +20,15 @@
       <option value="cat3">cat3</option>
       <option value="cat4">cat4</option>
     </select></li>
-    <li class="left"><input type="text" placeholder="Search"/></li>
+    <li class="left">
+      <div class="menu-search-container">
+        <form id="menu-search-form" action="/search" method="get">
+          <button type="submit" class="menu-search-icon-button">
+            <i class="fa fa-search"></i>
+          </button>
+          <input type="text" class="menu-search-bar" placeholder="Search for anything" name="query">
+        </form>
+      </div></li>
     <li class="right"><a href="">Shopping cart</a></li>
     <li class="right"><a href="">Login</a></li>
     <li class="right"><a href="">Sign up</a></li>
