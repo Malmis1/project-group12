@@ -15,25 +15,22 @@ li {
 
 li.right {
     float: right;
+    background-color: #4a7dff;
 }
 
 li.left {
     float: left;
 }
 
-li:last-child {
-    margin-right: 0;
-}
-
 li a {
     display: block;
     text-align: center;
     padding: 14px 16px;
-    background-color: #4a7dff;
+
     color: white;
 }
 
-li a:hover:not(.active) {
+li.right:hover:not(.active) {
     background-color: #3757a8;
 }
 

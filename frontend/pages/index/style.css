@@ -1,0 +1,60 @@
+.slider-container, .categories-container {
+    margin: 20px;
+}
+
+#course-slider {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+.slide {
+    flex: 0 0 auto;
+    width: 300px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+
+.slide img {
+    max-width: 100%;
+}
+
+.course-title {
+  margin: 10px 0;
+  text-align: center;
+}
+
+.course-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  width: 100%;
+  box-sizing: border-box;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.course-button:hover {
+  background-color: #0056b3;
+}
+
+.categories {
+    display: flex;
+}
+.category {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.category:last-child {
+    margin-right: 0;
+}
+
