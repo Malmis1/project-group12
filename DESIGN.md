@@ -31,6 +31,10 @@ A favicon will be used for the website (which is visible in the corresponding ta
 
 TODO: Write guideline for typography.
 
+- Font Sizes and Styles
+- Alignment
+
+
 ## Border rounding
 
 Functional elements are rounded in order to give a friendlier feel to the site.
@@ -38,6 +42,8 @@ Functional elements are rounded in order to give a friendlier feel to the site.
 ## Shadows
 
 TODO: Write guideline for shadows.
+
+According to the theme there will be no use of shadows as it will not suite this site.
 
 
 
