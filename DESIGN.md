@@ -2,32 +2,43 @@
 
 TODO: Write a design guideline based on the following points (taken from `Blackboard > Learning materials >
 Week_5`):
-1. Theme: how serious or playful the design should be
-2. Color scheme:
-    - Does the company have a color scheme?
-    - Which colors are suggested by the theme of the site?
-    - Pick the main color
-    - Pick an accent color (optional)
-3. Hierarchy and layout:
-    - What is the most important message/product on the page?
-    - What is the order of importance for the different elements?
-    - What sections will there be on the page?
-    - What layout(s) will you use for the sections?
-4. Images:
-    - Gather the available images
-    - Will there be text on images or aside images?
-    - Will we use clear images or a color-overlay?
-    - Will there be blur for images?
-5. Icons:
-    - Will we use icons and for what?
-    - Colored or black-and-white/greyscale icons?
-6. Typography:
-    - Should it by a Serif or Sans-Serif font?
-    - Bold or thin font?
-    - Rounded or sharp edges?
-7. Border rounding:
-    - How rounded should be the edges, according to the theme?
-8. Shadows:
-    - How much shadow will we use in general, according to the theme?
+
+## Theme
+
+The learning portal should be designed to be serious and is meant for professionals. There is still room for some playfulness, as to not be boring.
+
+## Color scheme
+
+The main color chosen for the website is orange along with blue as a complimentary accent color. The orange color contributes to giving cheerfulness, creativity, friendliness, confidence and courage. It also draws attention without being overpowering.
+
+## Hierarchy and layout
+
+TODO: Write guideline for hierarchy and layout.
+
+The most essential information and functionality is located at the topmost of the landing page.
+
+## Images
+
+TODO: Write guideline for images.
+
+Images will have alternative texts that describes the contents of the image.
+
+## Icons
+
+A favicon will be used for the website (which is visible in the corresponding tab in the web-browser).
+
+## Typography
+
+TODO: Write guideline for typography.
+
+## Border rounding
+
+Functional elements are rounded in order to give a friendlier feel to the site.
+
+## Shadows
+
+TODO: Write guideline for shadows.
+
+
 
 TODO: Further specify the technical decisions (comes later after implementing the site).
