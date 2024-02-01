@@ -4,6 +4,7 @@ ul {
     text-align: center;
     margin: 0;
     list-style-type: none;
+    background-color: #ffcc4a;
 }
 
 li {
@@ -28,27 +29,34 @@ li a {
     display: block;
     text-align: center;
     padding: 14px 16px;
-    background-color: transparent;
+    background-color: #4a7dff;
+    color: white;
 }
 
 li a:hover:not(.active) {
-    background-color: gray;
+    background-color: #3757a8;
 }
 
 li select, li input {
     padding: 10px 16px;
     margin: 0;
     vertical-align: middle; /
+    background-color: #4a7dff;
 }
 
 li select {
     border: 1px solid #ccc;
     background-color: white;
-    color: black;
+    background-color: #4a7dff;
+    color: white;
+}
+
+li input::placeholder {
+    color: white;
 }
 
 li input {
     border: 1px solid #ccc;
-    background-color: white;
-    color: black;
+    background-color: #4a7dff;
+    color: white;
 }
