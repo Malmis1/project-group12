@@ -42,24 +42,30 @@ li select, li input {
 li select {
     font-size: 16px;
     border-radius: 25px;
-    border: 2px solid black;
+    border: 1px solid black;
     background-color: transparent;
     color: black;
 }
 
+li select:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.8px black;
+}
+
 .menu-button {
-    display: inline-block; /* Allows the use of padding and margins */
-    background-color: #ffcc4a; /* Button color */
-    color: black; /* Text color */
-    padding: 10px 16px; /* Button padding */
-    border: 2px solid black; /* Button border */
-    border-radius: 25px; /* Rounded corners */
-    text-decoration: none; /* Removes underline from links */
-    transition: background-color 0.5s; /* Smooth transition for hover effect */
+    display: inline-block;
+    background-color: #ffcc4a;
+    color: black;
+    padding: 10px 16px;
+    border: 1px solid black;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: background-color 0.5s;
 }
 
 .menu-button:hover {
-    background-color: #deb140; /* Darker shade on hover */
+    background-color: #deb140;
+    box-shadow: 0 0 0 0.8px black;
 }
 
 .menu-search-container {
@@ -73,11 +79,15 @@ li select {
     width: 40vw;
     padding: 10px 40px 10px 30px;
     font-size: 16px;
-    border: 2px solid black;
-    color: black;
+    border: 1px solid black;
     border-radius: 25px;
     outline: none;
     background: transparent;
+}
+
+.menu-search-bar:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.8px black;
 }
 
 .menu-search-icon-button {

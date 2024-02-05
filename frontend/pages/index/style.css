@@ -58,6 +58,23 @@
     margin-right: 0;
 }
 
+.hero-section {
+    background-image: url('../../resources/images/Amazon Web Services.png');
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-quote {
+    color:  #ffcc4a;
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
 .search-container {
     display: flex;
     justify-content: center;
@@ -70,8 +87,7 @@
     width: 50vw;
     padding: 10px 40px 10px 30px;
     font-size: 16px;
-    border: 2px solid black;
-    color: black;
+    border: 1px solid black;
     border-radius: 25px;
     outline: none;
 }
@@ -90,7 +106,22 @@
 
 
 .search-bar:focus {
-    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 0 0.8px black;
 }
 
+.explore-courses-link {
+    display: inline-block;
+    margin-top: 20px;
+    background-color: #ffcc4a;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: background-color 0.5s;
+}
+
+.explore-courses-link:hover {
+    background-color: #deb140;
+}
 
