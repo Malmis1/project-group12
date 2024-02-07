@@ -13,9 +13,7 @@ The main color chosen for the website is orange along with blue as a complimenta
 
 ## Hierarchy and layout
 
-TODO: Write guideline for hierarchy and layout.
-
-The most essential information and functionality is located at the topmost of the landing page.
+The most essential information and functionality is located at the topmost of each page. Generally, the main page has a hero section, a general overview of some courses, and some extra functionality or information underneath. Pages will also have a header and footer that are located at the topmost and bottommost of the page respectively. The header contains the most essential information and functionality, such as the logo, search bar, log in/sign up and shopping cart. The footer contains links to various information (for example: policies, contact information, sitemap, etc...) as well as a disclaimer that describes the webpage being a result of a group project. Generally, each section will have layouts that suits the contents inside. For example, using grid layout for the overview over courses, or centered contents inside the hero section.
 
 ## Images
 
