@@ -21,7 +21,7 @@ The images used for the pages should be suitable for the theming. Images that co
 
 ## Icons
 
-A favicon will be used for the website (which is visible in the corresponding tab in the web-browser).
+A favicon will be used for the website (which is visible in the corresponding tab in the web-browser). Icons can be used for logos, such as the logo for the main page. Icons can contain colors that fit the theme.
 
 ## Typography
 
