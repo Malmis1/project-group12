@@ -91,6 +91,10 @@ margin-left: auto;
     background: transparent;
 }
 
+.menu-search-bar::placeholder {
+  color: #333;
+}
+
 .menu-search-bar:focus {
     outline: none;
     box-shadow: 0 0 0 0.8px black;
