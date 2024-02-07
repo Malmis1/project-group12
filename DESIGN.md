@@ -1,8 +1,5 @@
 # Design guideline
 
-TODO: Write a design guideline based on the following points (taken from `Blackboard > Learning materials >
-Week_5`):
-
 ## Theme
 
 The learning portal should be designed to be serious and is meant for professionals. There is still room for some playfulness, as to not be boring.
