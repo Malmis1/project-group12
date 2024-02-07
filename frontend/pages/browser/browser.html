@@ -12,8 +12,28 @@
 </head>
 
 <body>
-  <script src="navbar-script.js"></script>
-  <div id="navbar-container"></div>
+<ul class="navbar">
+  <li class="left"><img src="resources/images/Java.png" alt="Logo" width="40" height="40"></li>
+  <li class="left"><select name="Category">
+    <option value="">Category</option>
+    <option value="cat1">cat1</option>
+    <option value="cat2">cat2</option>
+    <option value="cat3">cat3</option>
+    <option value="cat4">cat4</option>
+  </select></li>
+  <li class="left">
+    <div class="menu-search-container">
+      <form id="menu-search-form" action="/search" method="get">
+        <button type="submit" class="menu-search-icon-button">
+          <i class="fa fa-search"></i>
+        </button>
+        <input type="text" class="menu-search-bar" placeholder="Search for anything" name="query">
+      </form>
+    </div></li>
+  <li class="right"><a href="" class="menu-button"><i class="fa fa-shopping-cart" style="font-size:16px"></i></a></li>
+  <li class="right"><a href="" class="menu-button">Login</a></li>
+  <li class="right"><a href="" class="menu-button">Sign up</a></li>
+</ul>
 
   <div class="course-container">
     <div class="course">
