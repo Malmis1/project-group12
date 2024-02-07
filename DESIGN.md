@@ -21,7 +21,7 @@ The most essential information and functionality is located at the topmost of th
 
 TODO: Write guideline for images.
 
-Images will have alternative texts that describes the contents of the image.
+The images used for the pages should be suitable for the theming. Images will have alternative texts that describes the contents of the image.
 
 ## Icons
 
@@ -34,16 +34,13 @@ TODO: Write guideline for typography.
 - Font Sizes and Styles
 - Alignment
 
-
 ## Border rounding
 
-Functional elements are rounded in order to give a friendlier feel to the site.
+Functional elements are rounded slightly in order to give a friendlier feel to the site.
 
 ## Shadows
 
-TODO: Write guideline for shadows.
-
-According to the theme there will be no use of shadows as it will not suite this site.
+There should be minimal usage of shadows. Shadows adds playfulness that does not fit the theme as much. Although, shadows can be used for adding some stand out elements of the page.
 
 
 
