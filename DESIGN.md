@@ -25,10 +25,7 @@ A favicon will be used for the website (which is visible in the corresponding ta
 
 ## Typography
 
-TODO: Write guideline for typography.
-
-- Font Sizes and Styles
-- Alignment
+Sans serif font will be used in order to increase readability on the pages, especially considering smaller and lower resolution screens. Text that correspond to titles or headers should use bold font, whereas text for buttons and other information should be thin. The font should have sharp edges.
 
 ## Border rounding
 
