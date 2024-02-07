@@ -17,9 +17,7 @@ The most essential information and functionality is located at the topmost of ea
 
 ## Images
 
-TODO: Write guideline for images.
-
-The images used for the pages should be suitable for the theming. Images will have alternative texts that describes the contents of the image.
+The images used for the pages should be suitable for the theming. Images that contribute to functionality will have alternative texts that describes the contents of the image. Text and other elements can be overlaid over certain images (as background), such as in the hero section. Generally, text and other elements should be kept to the side of images. Filters and blur can be used on certain images to improve the visibility of text or other overlaid elements, but should not be used frequently.
 
 ## Icons
 
