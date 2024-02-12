@@ -28,7 +28,7 @@
 }
 
 .course-button {
-  background-color: #007bff;
+  background-color: #09435e;
   color: white;
   border: none;
   padding: 10px 20px;
@@ -40,7 +40,7 @@
 }
 
 .course-button:hover {
-  background-color: #0056b3;
+  background-color: #062f42;
 }
 
 .categories {
@@ -59,7 +59,8 @@
 }
 
 .hero-section {
-    padding:40px;
+    padding: 25px;
+    padding-top: 100px;
     background-image: url('../../resources/images/HeroImage.png');
     background-size: cover;
     background-position: center;
