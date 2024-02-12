@@ -1,8 +1,5 @@
 # Design guideline
 
-TODO: Write a design guideline based on the following points (taken from `Blackboard > Learning materials >
-Week_5`):
-
 ## Theme
 
 The learning portal should be designed to be serious and is meant for professionals. There is still room for some playfulness, as to not be boring.
@@ -17,20 +14,15 @@ The most essential information and functionality is located at the topmost of ea
 
 ## Images
 
-TODO: Write guideline for images.
-
-The images used for the pages should be suitable for the theming. Images will have alternative texts that describes the contents of the image.
+The images used for the pages should be suitable for the theming. Images that contribute to functionality will have alternative texts that describes the contents of the image. Text and other elements can be overlaid over certain images (as background), such as in the hero section. Generally, text and other elements should be kept to the side of images. Filters and blur can be used on certain images to improve the visibility of text or other overlaid elements, but should not be used frequently.
 
 ## Icons
 
-A favicon will be used for the website (which is visible in the corresponding tab in the web-browser).
+A favicon will be used for the website (which is visible in the corresponding tab in the web-browser). Icons can be used for certain functional elements, such as buttons for categories. Icons can contain colors that fit the theme.
 
 ## Typography
 
-TODO: Write guideline for typography.
-
-- Font Sizes and Styles
-- Alignment
+Sans serif font will be used in order to increase readability on the pages, especially considering smaller and lower resolution screens. Text that correspond to titles or headers should use bold font, whereas text for buttons and other information should be thin. The font should have sharp edges.
 
 ## Border rounding
 

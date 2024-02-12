@@ -1,4 +1,7 @@
 .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     padding: 15px;
     overflow: hidden;
     text-align: center;
@@ -9,21 +12,22 @@
     box-shadow: 0px 5px 7px #4a4a4a;
     position: fixed;
     z-index: 1;
+
 }
 
 .navbar li {
-    display: inline-block;
-    vertical-align: middle;
     margin-right: 20px;
+
+}
+
+.right-items {
+margin-left: auto;
+    display: flex;
+    align-items: center;
 }
 
 .navbar li.right {
-    float: right;
-    background-color: transparent;
-}
-
-.navbar li.left {
-    float: left;
+    margin-right: 10px; /* Adjust as needed */
 }
 
 .navbar li a {
@@ -85,6 +89,10 @@
     border-radius: 25px;
     outline: none;
     background: transparent;
+}
+
+.menu-search-bar::placeholder {
+  color: #333;
 }
 
 .menu-search-bar:focus {
