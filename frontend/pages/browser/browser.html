@@ -1,50 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Browser - Learniverse Connect</title>
-  <link rel="icon" href="../../resources/images/logo/Logo.svg">
-  <meta charset="utf-8"/>
-  <link rel="stylesheet" type="text/css" href="style.css"/>
-  <link rel="stylesheet" type="text/css" href="../../resources/css/navbar.css"/>
-  <link rel="stylesheet" type="text/css" href="../../resources/css/style.css"/>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script>
-  </script>
+    <title>Browser - Learniverse Connect</title>
+    <link rel="icon" href="../../resources/images/logo/Logo.svg">
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link rel="stylesheet" type="text/css" href="../../resources/css/navbar.css"/>
+    <link rel="stylesheet" type="text/css" href="../../resources/css/style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-<ul class="navbar">
-  <li class="left"><a href="../../index.html"><img src="../../resources/images/logo/LogoFlat.png" alt="Logo" width="160"></a></li>
-  <li class="left"><select name="Category">
-    <option value="">Category</option>
-    <option value="cat1">cat1</option>
-    <option value="cat2">cat2</option>
-    <option value="cat3">cat3</option>
-    <option value="cat4">cat4</option>
-  </select></li>
-  <li class="left">
-    <div class="menu-search-container">
-      <form id="menu-search-form" action="/search" method="get">
-        <button type="submit" class="menu-search-icon-button">
-          <i class="fa fa-search"></i>
-        </button>
-        <input type="text" class="menu-search-bar" placeholder="Search for anything" name="query">
-      </form>
-    </div></li>
-  <div class="right-items">
-    <li><a href="" class="menu-button"><i class="fa fa-shopping-cart" style="font-size:16px"></i></a></li>
-    <li><a href="" class="menu-button">Login</a></li>
-    <li><a href="" class="menu-button">Sign up</a></li>
-  </div>
-</ul>
+    <ul class="navbar">
+        <li class="left"><a href="../../index.html"><img src="../../resources/images/logo/LogoFlat.png" alt="Logo" width="160"></a></li>
+        <li class="left"><select name="Category">
+            <option value="">Category</option>
+            <option value="cat1">cat1</option>
+            <option value="cat2">cat2</option>
+            <option value="cat3">cat3</option>
+            <option value="cat4">cat4</option>
+        </select></li>
+        <li class="left">
+            <div class="menu-search-container">
+                <form id="menu-search-form" action="/search" method="get">
+                    <button type="submit" class="menu-search-icon-button">
+                        <i class="fa fa-search"></i>
+                    </button>
+                    <input type="text" class="menu-search-bar" placeholder="Search for anything" name="query">
+                </form>
+            </div>
+        </li>
+        <div class="right-items">
+            <li><a href="" class="menu-button"><i class="fa fa-shopping-cart" style="font-size:16px"></i></a></li>
+            <li><a href="" class="menu-button">Login</a></li>
+            <li><a href="" class="menu-button">Sign up</a></li>
+        </div>
+    </ul>
 
-  <div class="course-container">
-    <div class="course">
-      <img src="../../resources/images/business strategy.jpg" alt="Course Image" class="course-image">
-      <h3 class="course-title">Strategy</h3>
-      <button class="course-button">Add to cart</button>
+    <div class="browser-content">
+        <div class="category-sidebar">
+            <h2>Categories</h2>
+            <form id="category-form">
+                <div class="category-option">
+                    <input type="checkbox" id="cat1" name="cat1">
+                    <span class="checkmark"></span>
+                    <label for="cat1">Category 1</label>
+                </div>
+                <div class="category-option">
+                    <input type="checkbox" id="cat2" name="cat2">
+                    <span class="checkmark"></span>
+                    <label for="cat2">Category 2</label>
+                </div>
+                <div class="category-option">
+                    <input type="checkbox" id="cat3" name="cat3">
+                    <span class="checkmark"></span>
+                    <label for="cat3">Category 3</label>
+                </div>
+                <!-- More categories... -->
+            </form>
+        </div>
+
+        <div class="course-container">
+            <h1 class="results-header">1000 results</h1>
+            <div class="sorting-container">
+                <label for="sorting" class="sort-label">Sort by</label>
+                <select id="sorting" class="sort-select">
+                    <option>Most relevant</option>
+                    <option>Price (low - high)</option>
+                    <option>Price (high - low)</option>
+                    <option>Alphabetic (a to z)</option>
+                    <option>Alphabetic (z to a)</option>
+                    <!-- We can add more ... -->
+                </select>
+            </div>
+
+            <div class="course">
+                <img src="../../resources/images/business strategy.jpg" alt="Course Image" class="course-image">
+                <h3 class="course-title">Strategy</h3>
+                <button class="course-button">Add to cart</button>
+            </div>
+            <div class="course">
+                <img src="../../resources/images/business strategy.jpg" alt="Course Image" class="course-image">
+                <h3 class="course-title">Strategy</h3>
+                <button class="course-button">Add to cart</button>
+            </div>
+            <div class="course">
+                <img src="../../resources/images/business strategy.jpg" alt="Course Image" class="course-image">
+                <h3 class="course-title">Strategy</h3>
+                <button class="course-button">Add to cart</button>
+            </div>
+            <div class="course">
+                <img src="../../resources/images/business strategy.jpg" alt="Course Image" class="course-image">
+                <h3 class="course-title">Strategy</h3>
+                <button class="course-button">Add to cart</button>
+            </div>
+            <div class="course">
+                <img src="../../resources/images/business strategy.jpg" alt="Course Image" class="course-image">
+                <h3 class="course-title">Strategy</h3>
+                <button class="course-button">Add to cart</button>
+            </div>
+            <div class="course">
+                <img src="../../resources/images/business strategy.jpg" alt="Course Image" class="course-image">
+                <h3 class="course-title">Strategy</h3>
+                <button class="course-button">Add to cart</button>
+            </div>
+            <div class="course">
+                <img src="../../resources/images/business strategy.jpg" alt="Course Image" class="course-image">
+                <h3 class="course-title">Strategy</h3>
+                <button class="course-button">Add to cart</button>
+            </div>
+            <div class="course">
+                <img src="../../resources/images/business strategy.jpg" alt="Course Image" class="course-image">
+                <h3 class="course-title">Strategy</h3>
+                <button class="course-button">Add to cart</button>
+            </div>
+            <!-- More courses... -->
+        </div>
     </div>
-  </div>
-
 </body>
 </html>
