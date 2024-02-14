@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <title>Sign up - Learniverse Connect</title>
+  <link rel="stylesheet" type="text/css" href="../../resources/images/background/sign-up-background.jpg">
   <link rel="icon" href="../../resources/images/logo/Logo.svg">
   <meta charset="utf-8"/>
   <link rel="stylesheet" type="text/css" href="style.css"/>
@@ -39,18 +40,27 @@
 </ul>
 
 
-<h1 class="signUpLabel">Sign up</h1>
-
-
-<div class="signUpForm">
-  <form>
-    <label for="fname">First name:</label>
-    <input type="text" id="fname" name="fname"><br><br>
-    <label for="lname">Last name:</label>
-    <input type="text" id="lname" name="lname"><br><br>
-    <input type="submit" value="Submit">
-  </form>
+<div class="signUpBar">
+  <h2 class="signUpLabel">Sign up</h2>
+  <div class="signUpContainer">
+    <form class="signUpForm">
+      <div class="formRow">
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email">
+      </div>
+      <div class="formRow">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password">
+      </div>
+      <div class="formRow">
+        <label for="cpassword">Confirm password:</label>
+        <input type="password" id="cpassword" name="cpassword">
+      </div>
+      <input class="form-button" type="submit" value="Confirm">
+    </form>
+  </div>
 </div>
+
 
 </body>
 </html>

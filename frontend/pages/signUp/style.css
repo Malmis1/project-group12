@@ -1,14 +1,67 @@
-.sign-up {
-
+body {
+  background-image: url('../../resources/images/background/sign-up-background.jpg'); /* The URL of the image file */
+  background-size: cover; /* Cover the entire page */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-attachment: fixed; /* The background is fixed with regard to the viewport */
+  background-position: center; /* Center the image on the page */
 }
-.signUpLabel {
+
+.signUpBar {
+    padding-top: 100px;
+    display: block;
     text-align: center;
-    padding-top: 150px;
+    height: auto;
+}
+
+.signUpLabel {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.signUpContainer {
+    width: auto;
+    height: auto;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    display: inline-block;
 }
 
 .signUpForm {
-    margin-left: auto;
-    margin-right: auto;
-    align-content: center;
-    position: center;
+    display: block;
+}
+
+.formRow {
+    margin-bottom: 20px;
+}
+
+.formRow label {
+    display: block;
+    margin-bottom: 5px;
+}
+.formRow input {
+    display: block;
+    margin-bottom: 5px;
+    padding: 3px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.form-button {
+    display: block;
+    background-color: #09435e;
+    color: white;
+    padding: 10px 16px;
+    border: 1px solid black;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: background-color 0.5s;
+    cursor: pointer;
+    margin: 40px auto 0;
+}
+
+.form-button:hover {
+    background-color: #062f42;
+    box-shadow: 0 0 0 0.8px black;
 }
