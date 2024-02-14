@@ -1,11 +1,19 @@
-.Log-in {
 
+.Log-in-bar {
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
 }
-.Log-in-bar{
 
-    margin: auto;
-    width: 12%;
-    align-content: end;
-    padding-top: 100px;
+.Log-in {
+    margin-bottom: 20px;
+}
 
+.Log-in-container {
+    width: 300px;
+    height: 350px;
+    border: 1px solid black;
 }
