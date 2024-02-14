@@ -1,8 +1,9 @@
 body {
     font-family: sans-serif;
     margin: 0px;
+    background-color: #fbfaf9;
 }
 
-h2 {
+h2, h1, label {
     color: #062f42;
 }
