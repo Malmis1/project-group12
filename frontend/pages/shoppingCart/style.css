@@ -1,0 +1,79 @@
+.container {
+    padding: 1rem;
+    overflow-y: scroll;
+    min-height: 60vh;
+    max-height: 90vh;
+    border-radius: 8px;
+    background-color: #c4c4c4;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.col {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.col-40 {
+    display: flex;
+    width: 40%;
+    text-align: center;
+}
+
+.col-50 {
+    display: flex;
+    width: 50%;
+}
+
+.col-60 {
+    display: flex;
+    width: 60%;
+}
+
+.row {
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1rem;
+}
+
+.checkoutBtn {
+    position: relative;
+    bottom: 0;
+}
+
+.courseLI {
+    text-align: left;
+    padding: 1rem;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    background-color: #a7a7a7;
+    width: 95%;
+    height: 7rem;
+    display: grid;
+    grid-template-columns: 4fr 7fr 1fr;
+}
+
+.courseLI img {
+    width: auto;
+    height: auto;
+    max-height: 100%;
+    max-width: 100%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.courseDescription {
+    padding-left: 5%;
+    padding-right: 2%;
+}
+
+.trash {
+    cursor: pointer;
+    text-align: center;
+    position: relative;
+    top: 100%;
+    transform: translateY(-50%);
+}
