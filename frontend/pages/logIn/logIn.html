@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<head xmlns="http://www.w3.org/1999/html">
     <title>Log in - Learniverse Connect</title>
     <link rel="icon" href="../../resources/images/logo/Logo.svg">
     <meta charset="utf-8"/>
@@ -38,9 +37,19 @@
     </div>
 </ul>
 
-<div class="Log-in-bar">
-    <h3 class="Log-in"> Log in to your account</h3>
+<div class="Log-in">
+    <h3 class="Log-in-bar"> Log in to your account</h3>
     <div class = "Log-in-container">
+
+        <form action="/login" method="post">
+            <label class="login-label" for="E-mail">E-mail:</label>
+            <input type="text" id="E-mail" name="E-mail" class="login-input" required>
+
+            <label class="login-label" for="password">Password:</label>
+            <input type="password" id="password" name="password" class="login-input" required>
+
+            <button class="Log-in-button" type="submit">Log in</button>
+        </form>
 
     </div>
 </div>
