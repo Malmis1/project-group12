@@ -34,6 +34,7 @@
 /* Results header */
 .results-header {
     position: absolute;
+    padding-left: 220px;
 }
 
 /* Sorting Dropdown Styles */
@@ -41,7 +42,7 @@
     position: absolute;
     right: 0px;
     padding-top: 25px;
-    padding-right: 10px;
+    padding-right: 170px;
     display: flex;
     align-items: center;
 }
@@ -60,7 +61,6 @@
 
 /* Courses Styles */
 .course-container {
-    position: absolute;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 20px;
