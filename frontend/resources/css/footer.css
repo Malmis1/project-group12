@@ -5,7 +5,7 @@
   color:white;
 }
 
-.footer ul, h3, a{
+.footer ul, h3 {
   padding:0;
   list-style:none;
   text-align:center;
@@ -55,6 +55,23 @@
     padding: 10px;
     text-align: center;
     font-size:13px;
+}
+
+.footer .info a {
+    text-decoration: none;
+}
+
+.footer .info a:hover {
+    color: #008000;
+    text-decoration: underline;
+}
+
+.footer .info a:active {
+  color: #004D00;
+}
+
+.footer .info a:visited {
+  color: #99CC00;
 }
 
 .footer .copyright {
