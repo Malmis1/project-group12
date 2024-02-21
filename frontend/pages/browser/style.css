@@ -94,8 +94,6 @@
     cursor: pointer;
     width: 100%;
     box-sizing: border-box;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
 }
 
 .course-button:hover {

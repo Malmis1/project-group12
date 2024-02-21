@@ -12,51 +12,52 @@
 </head>
 
 <body>
+    <nav>
+        <ul class="navbar">
+            <li class="left"><a href="../../index.html"><img src="../../resources/images/logo/LogoFlat.png" alt="Logo" width="160"></a></li>
+            <li class="left"><select name="Category">
+                <option value="">Category</option>
+                <option value="cat1">cat1</option>
+                <option value="cat2">cat2</option>
+                <option value="cat3">cat3</option>
+                <option value="cat4">cat4</option>
+            </select></li>
+            <li class="left">
+                <div class="menu-search-container">
+                    <form id="menu-search-form" action="/search" method="get">
+                        <button type="submit" class="menu-search-icon-button">
+                            <i class="fa fa-search"></i>
+                        </button>
+                        <input type="text" class="menu-search-bar" placeholder="Search for anything" name="query">
+                    </form>
+                </div></li>
+            <div class="right-items">
+                <li><a href="" class="menu-button"><i class="fa fa-shopping-cart" style="font-size:16px"></i></a></li>
+                <li><a href="" class="menu-button">Login</a></li>
+                <li><a href="" class="menu-button">Sign up</a></li>
+            </div>
+        </ul>
+    </nav>
 
-<ul class="navbar">
-    <li class="left"><a href="../../index.html"><img src="../../resources/images/logo/LogoFlat.png" alt="Logo" width="160"></a></li>
-    <li class="left"><select name="Category">
-        <option value="">Category</option>
-        <option value="cat1">cat1</option>
-        <option value="cat2">cat2</option>
-        <option value="cat3">cat3</option>
-        <option value="cat4">cat4</option>
-    </select></li>
-    <li class="left">
-        <div class="menu-search-container">
-            <form id="menu-search-form" action="/search" method="get">
-                <button type="submit" class="menu-search-icon-button">
-                    <i class="fa fa-search"></i>
-                </button>
-                <input type="text" class="menu-search-bar" placeholder="Search for anything" name="query">
+    <div class="Log-in">
+        <div class = "Log-in-container">
+
+            <h3 class="Log-in-bar"> Log in to your account</h3>
+
+            <form action="/login" method="post">
+                <input type="email" id="email" name="email" class="login-input" required placeholder="E-mail">
+                <input type="password" id="password" name="password" class="login-input" required placeholder="Password">
+
+                <button class="Log-in-button" type="submit">Log in</button>
+
+                <p class="forgot-password-link">Forgot password?</p>
+                <p class="account-links">
+                    Dont have an account? <a href="#" class="sign-up-link">Sign up</a>
+                </p>
             </form>
-        </div></li>
-    <div class="right-items">
-        <li><a href="" class="menu-button"><i class="fa fa-shopping-cart" style="font-size:16px"></i></a></li>
-        <li><a href="" class="menu-button">Login</a></li>
-        <li><a href="" class="menu-button">Sign up</a></li>
+
+        </div>
     </div>
-</ul>
-
-<div class="Log-in">
-    <div class = "Log-in-container">
-
-        <h3 class="Log-in-bar"> Log in to your account</h3>
-
-        <form action="/login" method="post">
-            <input type="email" id="email" name="email" class="login-input" required placeholder="E-mail">
-            <input type="password" id="password" name="password" class="login-input" required placeholder="Password">
-
-            <button class="Log-in-button" type="submit">Log in</button>
-
-            <p class="forgot-password-link">Forgot password?</p>
-            <p class="account-links">
-                Dont have an account? <a href="#" class="sign-up-link">Sign up</a>
-            </p>
-        </form>
-
-    </div>
-</div>
 
 </body>
 </html>
