@@ -12,6 +12,7 @@
 </head>
 
 <body>
+
 <ul class="navbar">
     <li class="left"><a href="../../index.html"><img src="../../resources/images/logo/LogoFlat.png" alt="Logo" width="160"></a></li>
     <li class="left"><select name="Category">
@@ -38,17 +39,20 @@
 </ul>
 
 <div class="Log-in">
-    <h3 class="Log-in-bar"> Log in to your account</h3>
     <div class = "Log-in-container">
 
-        <form action="/login" method="post">
-            <label class="login-label" for="E-mail">E-mail:</label>
-            <input type="text" id="E-mail" name="E-mail" class="login-input" required>
+        <h3 class="Log-in-bar"> Log in to your account</h3>
 
-            <label class="login-label" for="password">Password:</label>
-            <input type="password" id="password" name="password" class="login-input" required>
+        <form action="/login" method="post">
+            <input type="email" id="email" name="email" class="login-input" required placeholder="E-mail">
+            <input type="password" id="password" name="password" class="login-input" required placeholder="Password">
 
             <button class="Log-in-button" type="submit">Log in</button>
+
+            <p class="forgot-password-link">Forgot password?</p>
+            <p class="account-links">
+                Dont have an account? <a href="#" class="sign-up-link">Sign up</a>
+            </p>
         </form>
 
     </div>
