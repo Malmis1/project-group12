@@ -1,0 +1,60 @@
+.information-section {
+    padding: 150px 50px 50px 50px;
+    display: flex;
+    background-color: #062f42;
+}
+
+.information-section .left, .information-section .right {
+    padding: 10px;
+}
+
+.information-section .left {
+    flex: 1;
+
+}
+
+.information-section .right {
+    flex: 3;
+
+}
+
+.information-section aside {
+    position: fixed;
+     background-color: white;
+}
+
+.information-section .button {
+  background-color: #09435e;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 10px;
+}
+
+.information-section .button:hover {
+  background-color: #062f42;
+}
+
+.information-section .right div {
+    padding-left:100px;
+    padding-right:100px;
+}
+
+.course-title {
+    color: white;
+    font-size: 60px;
+    margin: 0px;
+}
+
+.about-title {
+    padding-top: 50px;
+    color: white;
+}
+
+.about {
+    font-size: 17px;
+    color: white;
+}
