@@ -41,7 +41,7 @@
         </ul>
     </nav>
 
-    <div class="hero-section">
+    <section class="hero-section">
         <div class="hero-content">
             <h1 class="hero-quote">Unlock your potential</h1>
             <div class="search-container">
@@ -52,14 +52,12 @@
                     <input type="text" class="search-bar" placeholder="Search for anything" name="query">
                 </form>
             </div>
+            <h5>OR</h5>
             <a href="pages/browser/browser.html" class="explore-courses-link">Explore all courses</a>
         </div>
-    </div>
+    </section>
 
-
-
-
-    <div class="slider-container">
+    <section class="slider-container">
         <h2>Most popular courses</h2>
         <div id="course-slider">
             <div class="slide">
@@ -108,45 +106,62 @@
                 <button class="course-button">Add to cart</button>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div class="categories-container">
-        <h2>Categories</h2>
+    <section class="categories-container">
+        <h2>Most popular categories</h2>
         <div class="categories">
-            <button class="category">Category 1</button>
-            <button class="category">Category 1</button>
-            <button class="category">Category 1</button>
-            <button class="category">Category 1</button>
-            <button class="category">Category 1</button>
+            <div class="category">
+                <button onclick="goToPageWithCheckboxes('category1')">
+                    <img src="resources/images/categoryIcons/Technology.png" alt="Information Technologies">
+                </button>
+                <h3 class="text">Information Technologies</h3>
+            </div>
+            <div class="category">
+                <button onclick="goToPageWithCheckboxes('category2')">
+                    <img src="resources/images/categoryIcons/Marketing.png" alt="Digital Marketing">
+                </button>
+                <h3 class="text">Digital Marketing</h3>
+            </div>
+            <div class="category">
+                <button onclick="goToPageWithCheckboxes('category3')">
+                    <img src="resources/images/categoryIcons/Business.png" alt="Business and Entrepreneurship">
+                </button>
+                <h3 class="text">Business and Entrepreneurship</h3>
+            </div>
+            <div class="category">
+                <button onclick="goToPageWithCheckboxes('category4')">
+                    <img src="resources/images/categoryIcons/Analytics.png" alt="Data Science and Analytics">
+                </button>
+                <h3 class="text">Data Science and Analytics</h3>
+            </div>
         </div>
-    </div>
+    </section>
 
-
-    <div class="footer">
-        <footer>
-            <div class="social">
-                <a href="#"><i class=""></i></a>
-                <a href="#"><i class=""></i></a>
-                <a href="#"><i class=""></i></a>
-                <a href="#"><i class=""></i></a>
-            </div>
-            <ul class="list-inline">
-                <li class="list-inline-item"><a href="index.html">Home</a></li>
-                <li class="list-inline-item"><a href="#">Services</a></li>
-                <li class="list-inline-item"><a href="#">About</a></li>
-                <li class="list-inline-item"><a href="#">Terms</a></li>
-                <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
-            </ul>
-            <div class="info">
-                <h3>Learniverse Connect</h3>
-                <p>These websites are a result of a university group project, <br>
-                    performed in the courses <a href="https://www.ntnu.edu/studies/courses/IDATA2301#tab=omEmnet">IDATA2301 Web technologies,</a>
-                    at <a href="https://www.ntnu.edu/">NTNU.</a> All the information provided <br>
-                    here is a result of imagination. Any resemblance with real companies
-                    or products is a coincidence.</p>
-            </div>
-            <p class="copyright">Learniverse Connect © 2024</p>
-        </footer>
-    </div>
+    <footer class="footer">
+        <div class="social">
+            <a href="#"><i class=""></i></a>
+            <a href="#"><i class=""></i></a>
+            <a href="#"><i class=""></i></a>
+            <a href="#"><i class=""></i></a>
+        </div>
+        <ul class="list-inline">
+            <li class="list-inline-item"><a href="index.html">Home</a></li>
+            <li class="list-inline-item"><a href="#">Services</a></li>
+            <li class="list-inline-item"><a href="#">About</a></li>
+            <li class="list-inline-item"><a href="#">Terms</a></li>
+            <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+        </ul>
+        <div class="info">
+            <h3>Learniverse Connect</h3>
+            <p>These websites are a result of a university group project, <br>
+                performed in the courses <a href="https://www.ntnu.edu/studies/courses/IDATA2301#tab=omEmnet">IDATA2301 Web technologies,</a>
+                at <a href="https://www.ntnu.edu/">NTNU.</a> All the information provided <br>
+                here is a result of imagination. Any resemblance with real companies
+                or products is a coincidence.</p>
+        </div>
+        <p class="copyright">Learniverse Connect © 2024</p>
+    </footer>
+    <script src="pages/index/script.js"></script>
 </body>
 </html>
