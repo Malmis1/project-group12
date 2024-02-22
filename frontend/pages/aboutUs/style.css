@@ -1,14 +1,44 @@
+.flex-container {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
 .aboutUsLabel {
     padding: 20px;
-    padding-top: 150px;
+    padding-top: 100px;
+    font-size: 50px;
+    background-color: #ebebeb;
 }
 
 .paragraph {
     padding-left: 20px;
-    width: 600px;
+    padding-right: 20px;
+    max-width: 1000px;
+    font-size: 20px;
+    line-height: 1.6;
 }
 
 .aboutUsImage {
-    align: right;
+    width:50%;
+    position: fixed;
+    top: 20px;
+    z-index: -1;
+}
 
+aside {
+    margin-left: auto;
+    width: 40%;
+}
+
+section {
+    flex: 1;
+}
+
+.subtitleLabel {
+    padding-left: 20px;
+    padding-top: 10px;
+    font-size: 25px;
 }
