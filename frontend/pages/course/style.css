@@ -1,3 +1,4 @@
+/* Information section*/
 .information-section {
     padding: 150px 50px 50px 50px;
     display: flex;
@@ -10,17 +11,30 @@
 
 .information-section .left {
     flex: 1;
-
 }
 
 .information-section .right {
     flex: 3;
-
 }
 
-.information-section aside {
+.information-section .right .content {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.sidebar {
     position: fixed;
-     background-color: white;
+    background-color: white;
+    padding: 5px;
+    text-align: center;
+    box-shadow: 0px 6px 9px black;
+}
+
+.information-section img {
+    width: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .information-section .button {
@@ -38,10 +52,6 @@
   background-color: #062f42;
 }
 
-.information-section .right div {
-    padding-left:100px;
-    padding-right:100px;
-}
 
 .course-title {
     color: white;
@@ -57,4 +67,28 @@
 .about {
     font-size: 17px;
     color: white;
+}
+
+/* Content section */
+.content-section {
+    padding: 50px;
+    display: flex;
+}
+
+.content-section .left, .content-section .right {
+    padding: 10px;
+
+}
+
+.content-section .left {
+    flex: 1;
+}
+
+.content-section .right {
+    flex: 3;
+}
+
+.content-section .right .content {
+    padding-left: 100px;
+    padding-right: 100px;
 }
