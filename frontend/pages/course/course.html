@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Browser - Learniverse Connect</title>
+    <link rel="icon" href="../../resources/images/logo/Logo.svg">
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link rel="stylesheet" type="text/css" href="../../resources/css/navbar.css"/>
+    <link rel="stylesheet" type="text/css" href="../../resources/css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="../../resources/css/footer.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <nav id="navbar"></nav>
+    <script>
+            document.addEventListener("DOMContentLoaded", function() {
+              fetch('../../resources/html/navbar.html')
+                .then(response => response.text())
+                .then(data => {
+                  document.getElementById('navbar').innerHTML = data;
+                });
+            });
+    </script>
+
+    <footer id="footer"></footer>
+    <script>
+            document.addEventListener("DOMContentLoaded", function() {
+              fetch('../../resources/html/footer.html')
+                .then(response => response.text())
+                .then(data => {
+                  document.getElementById('footer').innerHTML = data;
+                });
+            });
+    </script>
+    <script src="checkbox-script.js"></script>
+</body>
+</html>

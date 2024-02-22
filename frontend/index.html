@@ -14,32 +14,16 @@
 </head>
 
 <body>
-    <nav>
-        <ul class="navbar">
-            <li class="left"><a href="index.html"><img src="resources/images/logo/LogoFlat.png" alt="Logo" width="160"></a></li>
-            <li class="left"><select name="Category">
-                <option value="">Category</option>
-                <option value="cat1">cat1</option>
-                <option value="cat2">cat2</option>
-                <option value="cat3">cat3</option>
-                <option value="cat4">cat4</option>
-            </select></li>
-            <li class="left">
-                <div class="menu-search-container">
-                    <form id="menu-search-form" action="/search" method="get">
-                        <button type="submit" class="menu-search-icon-button">
-                            <i class="fa fa-search"></i>
-                        </button>
-                        <input type="text" class="menu-search-bar" placeholder="Search for anything" name="query">
-                    </form>
-                </div></li>
-            <div class="right-items">
-                <li><a href="" class="menu-button"><i class="fa fa-shopping-cart" style="font-size:16px"></i></a></li>
-                <li><a href="" class="menu-button">Login</a></li>
-                <li><a href="" class="menu-button">Sign up</a></li>
-            </div>
-        </ul>
-    </nav>
+    <nav id="navbar"></nav>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+          fetch('resources/html/navbar.html')
+            .then(response => response.text())
+            .then(data => {
+              document.getElementById('navbar').innerHTML = data;
+            });
+        });
+    </script>
 
     <section class="hero-section">
         <div class="hero-content">
@@ -138,30 +122,17 @@
         </div>
     </section>
 
-    <footer class="footer">
-        <div class="social">
-            <a href="#"><i class=""></i></a>
-            <a href="#"><i class=""></i></a>
-            <a href="#"><i class=""></i></a>
-            <a href="#"><i class=""></i></a>
-        </div>
-        <ul class="list-inline">
-            <li class="list-inline-item"><a href="index.html">Home</a></li>
-            <li class="list-inline-item"><a href="#">Services</a></li>
-            <li class="list-inline-item"><a href="#">About</a></li>
-            <li class="list-inline-item"><a href="#">Terms</a></li>
-            <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
-        </ul>
-        <div class="info">
-            <h3>Learniverse Connect</h3>
-            <p>These websites are a result of a university group project, <br>
-                performed in the courses <a href="https://www.ntnu.edu/studies/courses/IDATA2301#tab=omEmnet">IDATA2301 Web technologies,</a>
-                at <a href="https://www.ntnu.edu/">NTNU.</a> All the information provided <br>
-                here is a result of imagination. Any resemblance with real companies
-                or products is a coincidence.</p>
-        </div>
-        <p class="copyright">Learniverse Connect © 2024</p>
-    </footer>
+    <footer id="footer"></footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+          fetch('resources/html/footer.html')
+            .then(response => response.text())
+            .then(data => {
+              document.getElementById('footer').innerHTML = data;
+            });
+        });
+    </script>
+
     <script src="pages/index/script.js"></script>
 </body>
 </html>
