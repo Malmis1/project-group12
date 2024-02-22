@@ -1,67 +1,8 @@
-.slider-container, .categories-container {
-    margin: 20px;
-}
-
-#course-slider {
-    display: flex;
-    overflow-x: auto;
-    scroll-behavior: smooth;
-}
-
-.slide {
-    flex: 0 0 auto;
-    width: 300px;
-    margin-right: 10px;
-    border: 1px solid #ccc;
-    padding: 10px;
-    box-sizing: border-box;
-}
-
-
-.slide img {
-    max-width: 100%;
-}
-
-.course-title {
-  margin: 10px 0;
-  text-align: center;
-}
-
-.course-button {
-  background-color: #09435e;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
-  width: 100%;
-  box-sizing: border-box;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-}
-
-.course-button:hover {
-  background-color: #062f42;
-}
-
-.categories {
-    display: flex;
-}
-.category {
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-right: 10px;
-}
-
-.category:last-child {
-    margin-right: 0;
-}
-
+/* For the hero section*/
 .hero-section {
     padding: 25px;
     padding-top: 100px;
-    background-image: url('../../resources/images/HeroImage.png');
+    background-image: url('../../resources/images/background/HeroImage.png');
     background-size: cover;
     background-position: center;
     height: 60vh;
@@ -123,7 +64,6 @@
 
 .explore-courses-link {
     display: inline-block;
-    margin-top: 20px;
     background-color: #ffcc4a;
     color: black;
     padding: 10px 20px;
@@ -135,4 +75,89 @@
 .explore-courses-link:hover {
     background-color: #deb140;
 }
+
+/* Most popular courses */
+.slider-container, .categories-container {
+    margin: 40px;
+    margin-top: 75px;
+}
+
+#course-slider {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+.slide {
+    flex: 0 0 auto;
+    width: 300px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.slide img {
+    max-width: 100%;
+}
+
+.course-title {
+  margin: 10px 0;
+  text-align: center;
+}
+
+.course-button {
+  background-color: #09435e;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.course-button:hover {
+  background-color: #062f42;
+}
+
+/* Most popular categories */
+.categories-container {
+    margin-top: 75px;
+}
+
+.categories-container .categories {
+    margin-left: 50px;
+    margin-right: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.category {
+    text-align: center;
+}
+
+.category button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 0;
+    display: inline-block;
+    background-color: #EAEAEA;
+}
+
+.category button img {
+    width: 150px;
+    height: 150px;
+    padding: 40px;
+    display: block;
+}
+
+.category button img:hover  {
+    transform: scale(1.1);
+}
+
+
 
