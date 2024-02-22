@@ -4,7 +4,7 @@
     min-height: 60vh;
     max-height: 90vh;
     border-radius: 8px;
-    background-color: #c4c4c4;
+    background-color: #EAEAEA;
     text-align: center;
     justify-content: space-between;
 }
@@ -26,7 +26,7 @@
     padding: 1rem;
     margin-bottom: 10px;
     border-radius: 8px;
-    background-color: #a7a7a7;
+    background-color: #d5d5d5;
     width: 95%;
     height: 7rem;
     display: grid;
