@@ -51,18 +51,14 @@ body {
 }
 
 .forgot-password-link {
-    margin-top: 10px;
     color: #ffcc4a;
     text-decoration: underline;
     cursor: pointer;
+    margin-left: 235px;
 }
 
 .forgot-password-link:hover {
     color: #555;
-}
-
-.account-links {
-    margin-top: 10px;
 }
 
 .sign-up-link {
