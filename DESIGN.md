@@ -6,7 +6,7 @@ The learning portal should be designed to be serious and is meant for profession
 
 ## Color scheme
 
-The main color chosen for the website is orange along with blue as a complimentary accent color. The orange color contributes to giving cheerfulness, creativity, friendliness, confidence and courage. It also draws attention without being overpowering.
+The main color chosen for the website is orange **#ffcc4a** along with blue **#062f42;** as a complimentary accent color. The orange color contributes to giving cheerfulness, creativity, friendliness, confidence and courage. It also draws attention without being overpowering.
 
 ## Hierarchy and layout
 

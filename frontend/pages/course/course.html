@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <title>Browser - Learniverse Connect</title>
+    <link rel="icon" href="../../resources/images/logo/Logo.svg">
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link rel="stylesheet" type="text/css" href="../../resources/css/navbar.css"/>
+    <link rel="stylesheet" type="text/css" href="../../resources/css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="../../resources/css/footer.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <nav id="navbar"></nav>
+    <script>
+            document.addEventListener("DOMContentLoaded", function() {
+              fetch('../../resources/html/navbar.html')
+                .then(response => response.text())
+                .then(data => {
+                  document.getElementById('navbar').innerHTML = data;
+                });
+            });
+    </script>
+
+    <section class="main-section">
+        <section class="information-section">
+            <div class="left"></div>
+            <aside>
+                <img src="../../resources/images/business strategy.jpg" alt="Logo" width="400">
+
+                <button class="button">Add to cart</button>
+                <button class="button">Buy now</button>
+            </aside>
+
+
+            <article class="right">
+                <div>
+                    <h1 class="course-title">Course name</h1>
+                    <h2 class="about-title">What you'll learn</h2>
+                    <p class="about">Embark on a transformative learning experience with our expert-level online course, "RealTime Programming in Java." Designed for seasoned developers and Java enthusiasts seeking mastery in
+                        real-time applications, this advanced course delves deep into the intricacies of leveraging Java for
+                        mission-critical systems. Explore cutting-edge concepts such as multithreading, synchronization, and
+                        low-latency programming, equipping you with the skills needed to build responsive and robust real-time
+                        solutions. Led by industry experts with extensive hands-on experience, this course combines theoretical
+                        insights with practical application, ensuring you not only grasp the theoretical underpinnings but also
+                        gain the proficiency to implement real-time solutions confidently. Elevate your Java programming
+                        expertise to new heights and stay ahead in the ever-evolving landscape of real-time systems with our
+                        comprehensive and immersive course</p>
+                </div>
+            </article>
+        </section>
+
+        <section class="course-content">
+            <div class="chumbox">Chumbox</div>
+            <div class="chumbox">Chumbox</div>
+            <div class="chumbox">Chumbox</div>
+            <div class="chumbox">Chumbox</div>
+        </section>
+
+        <div class="ratings">
+            <h2>Ratings</h2>
+        </div>
+        </section>
+    </section>
+
+    <footer id="footer"></footer>
+    <script>
+            document.addEventListener("DOMContentLoaded", function() {
+              fetch('../../resources/html/footer.html')
+                .then(response => response.text())
+                .then(data => {
+                  document.getElementById('footer').innerHTML = data;
+                });
+            });
+    </script>
+    <script src="checkbox-script.js"></script>
+</body>
+</html>

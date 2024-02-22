@@ -1,0 +1,93 @@
+.container {
+    padding: 1rem;
+    overflow-y: scroll;
+    min-height: 60vh;
+    max-height: 90vh;
+    border-radius: 8px;
+    background-color: #d5d5d5;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.container ul {
+    padding-left: 0%;
+}
+
+.row {
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1rem;
+}
+
+.splitRow {
+    display: flex;
+    justify-content: space-around;
+}
+
+.splitRow p {
+    padding: 0% 4px;
+}
+
+li.splitRow {
+    text-wrap: nowrap;
+}
+
+label.required:after {
+    content: " *";
+    color: red;
+}
+
+label.required {
+    text-wrap: nowrap;
+}
+
+.field {
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+li.splitRow,
+li.field {
+    list-style-type: none;
+    text-wrap: nowrap;
+}
+
+.field input {
+    width: 98%;
+    box-sizing: border-box;
+}
+
+.field input[name="cardType"] {
+    width: 1rem;
+}
+
+.splitRow-70-30 {
+    display: grid;
+    grid-template-columns: 7fr 3fr;
+
+}
+
+.splitRow-50-50 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.splitRow-70-30 input,
+.splitRow-50-50 input {
+    position: relative;
+    width: 96%;
+    box-sizing: border-box;
+}
+
+.field select {
+    width: 98%;
+}
+
+input,
+select {
+    padding: 10px 16px;
+    margin: 0;
+    vertical-align: middle;
+    background-color: transparent;
+}
