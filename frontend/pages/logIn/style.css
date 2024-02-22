@@ -7,27 +7,27 @@ body {
 }
 
 .Log-in {
-    padding-top: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content:center;
     height: 100vh;
 }
 
 .Log-in-bar {
-        margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 .Log-in-container {
-        width: 500px;
-        height: 350px;
-        padding-top: 30px;
-        border: 1px solid black;
-        background-color: white;
-        border-radius: 8px;
-        text-align: center;
-        box-shadow: 0 0 0 black;
+    width: 500px;
+    height: 378px;
+    padding-top: 30px;
+    border: 1px solid black;
+    background-color: white;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 0 0 black;
+
 }
 
 .login-input {
@@ -43,26 +43,25 @@ body {
 .Log-in-button {
     width: 80%;
     padding: 12px ;
-    background-color: #ffcc4a;
-    color: black;
+    background-color: #09435e;
+    color: white;
     border-radius: 25px;
     cursor: pointer;
     border: none;
 }
 
 .forgot-password-link {
-    color: #ffcc4a;
+    color: #09435e;
     text-decoration: underline;
     cursor: pointer;
-    margin-left: 235px;
 }
 
 .forgot-password-link:hover {
     color: #555;
 }
 
-.sign-up-link {
-    color: #ffcc4a;
+.sign-up-link{
+    color: #09435e;
     text-decoration: underline;
     cursor: pointer;
 }
@@ -70,6 +69,9 @@ body {
 .sign-up-link:hover {
     color: #555;
 }
+
+
+
 
 
 

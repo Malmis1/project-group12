@@ -1,32 +1,35 @@
 body {
-  background-image: url('../../resources/images/background/sign-up-background.jpg'); /* The URL of the image file */
-  background-size: cover; /* Cover the entire page */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-attachment: fixed; /* The background is fixed with regard to the viewport */
-  background-position: center; /* Center the image on the page */
+    background-image: url('../../resources/images/background/sign-up-background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
 }
 
 .signUpBar {
-    padding-top: 100px;
-    display: block;
-    text-align: center;
-    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
 }
 
 .signUpLabel {
     display: block;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     font-size: 35px;
+
 }
 
 .signUpContainer {
-    width: auto;
-    height: auto;
-    background-color: white;
-    border: 1px solid black;
-    border-radius: 10px;
+    width: 80%; /* Adjusted width for responsiveness */
+    max-width: 500px; /* Added max-width for responsiveness */
     padding: 30px;
-    display: inline-block;
+    border: 1px solid black;
+    background-color: white;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 0 0 black;
 }
 
 .signUpForm {
@@ -37,29 +40,24 @@ body {
     margin-bottom: 20px;
 }
 
-.formRow label {
-    display: block;
-    margin-bottom: 5px;
-}
 .formRow input {
-    display: block;
-    margin-bottom: 5px;
-    padding: 5px;
-    border: 1px solid black;
-    border-radius: 10px;
+    width: calc(100% - 16px); /* Adjusted width for responsiveness */
+    padding: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #000;
+    border-radius: 0.5rem;
+
 }
 
 .form-button {
-    display: block;
     background-color: #09435e;
     color: white;
-    padding: 10px 16px;
-    border: 1px solid black;
-    border-radius: 25px;
     text-decoration: none;
-    transition: background-color 0.5s;
+    width: calc(100% - 32px); /* Adjusted width for responsiveness */
+    padding: 12px;
+    border-radius: 25px;
     cursor: pointer;
-    margin: 40px auto 0;
+    border: none;
 }
 
 .form-button:hover {
