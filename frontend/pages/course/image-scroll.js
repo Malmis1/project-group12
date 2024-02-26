@@ -1,18 +1,21 @@
 document.addEventListener('scroll', function() {
-    var footer = document.querySelector('.footer');
     var sidebar = document.querySelector('.sidebar');
+
+    if (sidebar.style.marginTop === "") {
+        sidebar.style.marginTop = '150px';
+    }
+
+    var footer = document.querySelector('.footer');
     var footerRect = footer.getBoundingClientRect();
     var sidebarBottom = sidebar.getBoundingClientRect().bottom;
-
     var footerOffsetTop = footer.offsetTop;
-
-    var stopFixed = footerOffsetTop - sidebar.offsetHeight - 40; // 20 is the top-padding
+    var stopFixed = footerOffsetTop - sidebar.offsetHeight - 170;
 
     if (window.scrollY > stopFixed) {
         sidebar.style.position = 'absolute';
         sidebar.style.top = stopFixed + 'px';
     } else {
         sidebar.style.position = 'fixed';
-        sidebar.style.top = '150px';
+        sidebar.style.top = '0px';
     }
 });
