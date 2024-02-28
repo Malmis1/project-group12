@@ -76,7 +76,16 @@ li.field {
 .splitRow-70-30 input,
 .splitRow-50-50 input {
     position: relative;
+    box-sizing: border-box;
+}
+
+.splitRow-50-50 input {
     width: 96%;
+}
+
+.splitRow-70-30 input {
+    position: relative;
+    width: 94%;
     box-sizing: border-box;
 }
 
