@@ -1,24 +1,31 @@
-<ul class="navbar">
-    <li class="left"><a href="/frontend/index.html"><img src="/frontend/resources/images/logo/LogoFlat.png" alt="Logo" width="160"></a></li>
-    <li class="left"><select name="Category">
-        <option value="">Category</option>
-        <option value="cat1">cat1</option>
-        <option value="cat2">cat2</option>
-        <option value="cat3">cat3</option>
-        <option value="cat4">cat4</option>
-    </select></li>
-    <li class="left-items">
+<nav class="navbar">
+    <div class="navbar-container">
+        <a href="/frontend/index.html" class="logo-link">
+            <img src="/frontend/resources/images/logo/LogoFlat.png" alt="Logo" width="160">
+        </a>
         <div class="menu-search-container">
             <form id="menu-search-form" action="/search" method="get">
+                <input type="text" class="menu-search-bar" placeholder="Search for anything" name="query">
                 <button type="submit" class="menu-search-icon-button">
                     <i class="fa fa-search"></i>
                 </button>
-                <input type="text" class="menu-search-bar" placeholder="Search for anything" name="query">
             </form>
-        </div></li>
-    <div class="right-items">
-        <li><a href="" class="menu-button"><i class="fa fa-shopping-cart" style="font-size:16px"></i></a></li>
-        <li><a href="" class="menu-button">Login</a></li>
-        <li><a href="" class="menu-button">Sign up</a></li>
+        </div>
+
+        <!-- Mobile Menu Icons which is hidden on larger screens, visible on smaller screens -->
+        <button class="mobile-menu-icon-hidden" aria-label="Open menu">
+            <a href=""><i class="fa fa-shopping-cart"></i></a>
+
+        </button>
+        <button class="mobile-menu-icon-hidden" aria-label="Open shopping cart">
+            <a href=""><i class="fa fa-bars"></i></a>
+        </button>
+
+        <!-- Right items to which is hidden on smaller screens -->
+        <div class="right-items">
+            <a href="" class="mobile-menu-icon"><i class="fa fa-shopping-cart"></i></a>
+            <a href="" class="menu-button">Login</a>
+            <a href="" class="menu-button">Sign up</a>
+        </div>
     </div>
-</ul>
+</nav>
