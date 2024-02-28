@@ -91,3 +91,12 @@ select {
     vertical-align: middle;
     background-color: transparent;
 }
+
+.submitButton {
+    background-color: #09435e;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    box-sizing: border-box;
+}
