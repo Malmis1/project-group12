@@ -22,8 +22,10 @@ body {
 }
 
 .signUpContainer {
-    width: 80%; /* Adjusted width for responsiveness */
-    max-width: 500px; /* Added max-width for responsiveness */
+    width: 500px;
+    height: 378px;
+    max-width: 500px;
+    max-height: 450px;
     padding: 30px;
     border: 1px solid black;
     background-color: white;
