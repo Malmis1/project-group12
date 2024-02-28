@@ -98,6 +98,16 @@
 
 }
 
+/* Hide the small logo by default */
+.logo-small {
+    display: none;
+}
+
+/* Default styles for the large logo */
+.logo-large {
+    display: block;
+}
+
 /* Hide mobile menu icon on larger screens */
 .mobile-menu-icon-hidden {
   display: none;
@@ -112,6 +122,16 @@
 }
 
 @media (max-width: 768px) {
+    /* Hide the large logo */
+    .logo-large {
+        display: none;
+    }
+
+    /* Show the small logo */
+    .logo-small {
+        display: block;
+    }
+
     .menu-search-container, .menu-search-bar {
         width: auto; /* Full width on smaller screens */
     }
