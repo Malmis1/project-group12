@@ -84,9 +84,7 @@ li.field {
 }
 
 .splitRow-70-30 input {
-    position: relative;
     width: 94%;
-    box-sizing: border-box;
 }
 
 .field select {
