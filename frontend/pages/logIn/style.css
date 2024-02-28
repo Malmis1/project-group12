@@ -15,7 +15,11 @@ body {
 }
 
 .Log-in-bar {
-    margin-bottom: 20px;
+    display: block;
+    margin-bottom: 25px;
+    font-size: 35px;
+    color: #062f42;
+
 }
 
 .Log-in-container {
