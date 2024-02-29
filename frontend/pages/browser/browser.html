@@ -11,13 +11,36 @@
     <link rel="stylesheet" type="text/css" href="../../resources/css/style.css"/>
     <link rel="stylesheet" type="text/css" href="../../resources/css/footer.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 
 <body>
     <nav id="navbar"></nav>
 
-    <div class="browser-content">
-        <aside class="category-sidebar">
+    <section class="browser-content">
+        <div class="top">
+            <h1 class="results-header">1000 results</h1>
+
+            <div class="button-container">
+                <button class="filter-button">
+                    <span class="filter-text"></span> <!--Text is changed in the search-filles.js-->
+                </button>
+                <span id="clearFilter" class="clear-filter">Clear filters</span>
+
+                <div class="sort-container">
+                    <label class="sort-label">Sort by</label>
+                    <select class="sort-select">
+                        <option>Most relevant</option>
+                        <option>Price (low - high)</option>
+                        <option>Price (high - low)</option>
+                        <option>Alphabetic (a to z)</option>
+                        <option>Alphabetic (z to a)</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <aside class="category-sidebar sidebar-hidden">
             <h2>Categories</h2>
             <form id="category-form">
                 <div class="category-option">
@@ -40,93 +63,15 @@
             </form>
         </aside>
 
-        <div class="top">
-            <h1 class="results-header">1000 results</h1>
-            <div class="sorting-container">
-                <label for="sorting" class="sort-label">Sort by</label>
-                <select id="sorting" class="sort-select">
-                    <option>Most relevant</option>
-                    <option>Price (low - high)</option>
-                    <option>Price (high - low)</option>
-                    <option>Alphabetic (a to z)</option>
-                    <option>Alphabetic (z to a)</option>
-                    <!-- We can add more ... -->
-                </select>
-            </div>
-        </div>
+        <main class="course-container">
 
-        <div class="course-container">
-            <div class="course">
-                <div class="image-box">
-                    <img src="../../resources/images/business strategy.jpg" alt="Course Image" class="course-image">
-                    <div class="image-text">Strategy course description. Click to view more</div>
-                </div>
-                    <h3 class="course-title">Strategy</h3>
-                <button class="course-button">Add to cart</button>
-            </div>
-            <div class="course">
-                <div class="image-box">
-                    <img src="../../resources/images/business strategy.jpg" alt="Course Image" class="course-image">
-                    <div class="image-text">Strategy course description. Click to view more</div>
-                </div>
-                <h3 class="course-title">Strategy</h3>
-                <button class="course-button">Add to cart</button>
-            </div>
-            <div class="course">
-                <div class="image-box">
-                    <img src="../../resources/images/business strategy.jpg" alt="Course Image" class="course-image">
-                    <div class="image-text">Strategy course description. Click to view more</div>
-                </div>
-                <h3 class="course-title">Strategy</h3>
-                <button class="course-button">Add to cart</button>
-            </div>
-            <div class="course">
-                <div class="image-box">
-                    <img src="../../resources/images/business strategy.jpg" alt="Course Image" class="course-image">
-                    <div class="image-text">Strategy course description. Click to view more</div>
-                </div>
-                <h3 class="course-title">Strategy</h3>
-                <button class="course-button">Add to cart</button>
-            </div>
-            <div class="course">
-                <div class="image-box">
-                    <img src="../../resources/images/business strategy.jpg" alt="Course Image" class="course-image">
-                    <div class="image-text">Strategy course description. Click to view more</div>
-                </div>
-                <h3 class="course-title">Strategy</h3>
-                <button class="course-button">Add to cart</button>
-            </div>
-            <div class="course">
-                <div class="image-box">
-                    <img src="../../resources/images/business strategy.jpg" alt="Course Image" class="course-image">
-                    <div class="image-text">Strategy course description. Click to view more</div>
-                </div>
-                <h3 class="course-title">Strategy</h3>
-                <button class="course-button">Add to cart</button>
-            </div>
-            <div class="course">
-                <div class="image-box">
-                    <img src="../../resources/images/business strategy.jpg" alt="Course Image" class="course-image">
-                    <div class="image-text">Strategy course description. Click to view more</div>
-                </div>
-                <h3 class="course-title">Strategy</h3>
-                <button class="course-button">Add to cart</button>
-            </div>
-            <div class="course">
-                <div class="image-box">
-                    <img src="../../resources/images/business strategy.jpg" alt="Course Image" class="course-image">
-                    <div class="image-text">Strategy course description. Click to view more</div>
-                </div>
-                <h3 class="course-title">Strategy</h3>
-                <button class="course-button">Add to cart</button>
-            </div>
-            <!-- More courses... -->
-        </div>
-    </div>
+        </main>
+    </section>
 
     <footer id="footer" class="footer"></footer>
 
     <script src="/frontend/resources/javascript/navbar-footer.js"></script>
-    <script src="checkbox-script.js"></script>
+    <script src="script.js"></script>
+    <script src="search-filter.js"></script>
 </body>
 </html>

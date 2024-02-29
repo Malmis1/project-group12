@@ -1,19 +1,101 @@
 .browser-content {
-    min-height: 100%;
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
     padding: 5%;
-    padding-top: 150px;
 }
 
-/* Sidebar Styles */
-.category-sidebar {
+.top {
+    width: 100%;
+}
+
+.results-header {
+    font-size: 40px;
+}
+
+/* Filter and sorting select styles */
+.button-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.filter-button,
+.sort-container {
+    align-items: center;
+}
+
+.sort-select,
+.filter-button {
+    font-size: 16px;
+    padding: 15px 10px;
+    border-radius: 5px;
+    border: 1.5px solid #ccc;
+    background-color: white;
+    cursor: pointer;
+}
+
+.sort-container {
     position: absolute;
-    padding-top: 60px;
-    width: 300px;
-    height: 100%;
-    box-sizing: border-box;
+    right: 5%;
+    margin-left: auto;
+    margin-right: 0;
 }
 
-/* Custom Checkbox Styles */
+.sort-select:hover {
+    background-color: #EAEAEA;
+}
+
+.filter-button {
+    padding: 14px 10px;
+    width: 120px;
+    justify-content: center;
+}
+
+.filter-button:hover {
+   background-color: #EAEAEA;
+}
+
+.filter-text, .sort-label {
+    text-align: center;
+    font-weight: bold;
+}
+
+.clear-filter {
+    font-size: 16px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.clear-filter:hover {
+    text-decoration: underline;
+}
+
+
+.sort-label {
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+.category-sidebar {
+    display: none;
+    flex: 1;
+}
+
+.category-sidebar.sidebar-visible {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .category-sidebar {
+        position: relative;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+/* Custom checkbox styles */
 .category-option {
     margin-bottom: 10px;
 }
@@ -32,45 +114,20 @@
     cursor: pointer;
 }
 
-/* Results header */
-.results-header {
-    position: absolute;
-    padding-left: 320px;
-}
-
-/* Sorting Dropdown Styles */
-.sorting-container {
-    position: absolute;
-    right: 0px;
-    padding-top: 25px;
-    padding-right: 170px;
-    display: flex;
-    align-items: center;
-}
-
-.sort-label {
-    font-size: 20px;
-    margin-right: 10px;
-    font-weight: bold;
-}
-
-.sort-select {
-    padding: 5px 10px;
-    border-radius: 5px;
-    border: 1.5px solid #ccc;
-}
-
 /* Courses Styles */
 .course-container {
+    flex: 3;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 20px;
-    padding-top: 80px;
-    margin-right: 80px;
-    margin-left: 320px;
 }
 
 .course {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    max-width: 300px;
     border: 1px solid #ccc;
     text-align: center;
     border-radius: 5px;
@@ -80,7 +137,6 @@
 .course-image {
     width: 100%;
     height: auto;
-    border-bottom: 1px solid #ccc;
 }
 
 .course-title {
@@ -126,7 +182,7 @@
 .image-text {
     position: absolute;
     padding: 10px;
-    width: 80%;
+    width: 100%;
     max-width: 90%;
     color: white;
     font-size: 20px;
