@@ -9,13 +9,19 @@ document.addEventListener("DOMContentLoaded", function() {
 
 // For toggling the popup menu on small screen sizes
 function toggleMenu() {
-    const popupMenu = document.getElementById('popupMenu');
-    if (popupMenu.style.display === 'block') {
-        popupMenu.style.display = 'none';
+    var menu = document.getElementById("popupMenu");
+    if (menu.classList.contains("show")) {
+        // When hiding
+        menu.style.maxHeight = null;
+        menu.classList.remove("show");
     } else {
-        popupMenu.style.display = 'block';
+        // When showing
+        const scrollHeight = menu.scrollHeight + "px";
+        menu.style.maxHeight = scrollHeight;
+        menu.classList.add("show");
     }
 }
+
 
 // For loading the footer
 document.addEventListener("DOMContentLoaded", function() {

@@ -1,3 +1,7 @@
+.main-section {
+    min-height: 100%;
+}
+
 /* Information section*/
 .information-section {
     padding: 150px 50px 50px 50px;

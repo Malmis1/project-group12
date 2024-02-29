@@ -1,3 +1,7 @@
+.main-section {
+    min-height: 100%;
+}
+
 /* For the hero section*/
 .hero-section {
     padding: 25px;
@@ -136,6 +140,8 @@
 }
 
 .category {
+    display: flex;
+    flex-direction: column;
     text-align: center;
 }
 
@@ -145,6 +151,7 @@
     cursor: pointer;
     padding: 0;
     display: inline-block;
+    width: min-content;
     background-color: #EAEAEA;
 }
 

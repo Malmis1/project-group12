@@ -91,20 +91,23 @@
     text-decoration: none;
 }
 
-.mobile-menu-icon:hover, .mobile-menu-icon-hidden a:hover  {
-    border-bottom: solid;
-}
-
 .mobile-menu-icon, .mobile-menu-icon-hidden {
   background: none;
   border: none;
   font-size: 26px;
   cursor: pointer;
+  margin-right: 10px;
 
 }
 
+.mobile-menu-icon:hover, .mobile-menu-icon-hidden:hover  {
+    border-bottom: solid;
+}
+
 .popup-menu {
-    display: none;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.1s ease-out;
     position: absolute;
     top: 100%;
     left: 0;
@@ -114,16 +117,16 @@
     z-index: 2;
 }
 
+.popup-menu.show {
+    max-height: 500px;
+}
+
 .popup-menu-item {
     display: block;
     padding: 10px;
     color: black;
     text-decoration: none;
-    border-bottom: 1px solid #4a4a4a;
-}
-
-.popup-menu-item:last-child {
-    border-bottom: none;
+    border-top: 1px solid #4a4a4a;
 }
 
 /* Hide the small logo by default */
