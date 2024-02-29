@@ -7,7 +7,7 @@
 }
 .favourite-bar{
     background-color: #09435e ;
-    padding-top: 48px;
+    padding-top: 30px;
 }
 .course-image {
     width: 100%;
@@ -23,12 +23,13 @@
 }
 .course-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: repeat(4, 1fr); /* Set the number of columns to 4 */
     gap: 50px;
     padding-top: 80px;
-    margin-left: 760px;
-
+    margin-right: 80px;
+    margin-left: 80px;
 }
+
 
 .course-button {
     background-color: #09435e;
