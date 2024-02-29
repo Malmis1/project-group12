@@ -89,6 +89,7 @@
 .navbar a {
     color: black;
     text-decoration: none;
+    position: relative;
 }
 
 .mobile-menu-icon, .mobile-menu-icon-hidden {
@@ -216,4 +217,50 @@
     }
 }
 
+.cart-count {
+    position: absolute;
+    top: -10px;
+    right: -5px;
+    background-color: #09435e;
+    color: white; /* Text color */
+    width: 20px; /* Circle size */
+    height: 20px; /* Circle size */
+    border-radius: 50%; /* Make it round */
+    font-size: 12px; /* Adjust based on your design */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white; /* Optional: adds a border around the circle */
+}
 
+.cart-dropdown {
+    display: none;
+    position: absolute;
+    right: 0;
+    width: 200px;
+    background-color: white;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 5;
+    top: 100%
+    border-radius-bottom: 25px;
+}
+
+.cart-dropdown ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.cart-dropdown ul li {
+    padding: 10px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.cart-dropdown ul li:last-child {
+    border-bottom: none;
+}
+
+.mobile-menu-icon:hover .cart-dropdown {
+    display: block;
+    transition: ease-in-out 0.5s;
+}
