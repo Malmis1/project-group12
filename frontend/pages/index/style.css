@@ -1,3 +1,7 @@
+.main-section {
+    min-height: 100%;
+}
+
 /* For the hero section*/
 .hero-section {
     padding: 25px;

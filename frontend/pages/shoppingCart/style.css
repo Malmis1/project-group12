@@ -12,6 +12,7 @@
 }
 
 .row {
+    min-height: 100%;
     padding: 1rem;
     display: grid;
     grid-template-columns: 2fr 1fr;

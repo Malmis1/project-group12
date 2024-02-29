@@ -1,4 +1,5 @@
 .browser-content {
+    min-height: 100%;
     padding: 5%;
     padding-top: 150px;
 }

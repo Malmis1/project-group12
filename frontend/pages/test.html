@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Search</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<header>
+    <!-- Search Section -->
+    <input type="text" id="searchInput" placeholder="Search for courses...">
+    <button onclick="searchCourses()">Search</button>
+
+    <!-- Filters Section -->
+    <div>
+        <label for="filterCategory">Category:</label>
+        <select id="filterCategory" onchange="searchCourses()">
+            <option value="all">All Categories</option>
+            <option value="technology">Technology</option>
+            <option value="business">Business</option>
+            <option value="art">Art</option>
+        </select>
+    </div>
+
+    <!-- Sort By Section -->
+    <div>
+        <label for="sortBy">Sort by:</label>
+        <select id="sortBy" onchange="searchCourses()">
+            <option value="title">Title</option>
+            <option value="author">Author</option>
+        </select>
+    </div>
+</header>
+
+<main id="coursesList">
+    <!-- Course cards will be added here dynamically -->
+</main>
+<script>
+// Placeholder data - This should ideally come from a server or API
+    const courses = [
+        { title: "Web Development", author: "Jane Doe", category: "technology", image: "placeholder.jpg" },
+        { title: "Introduction to Business", author: "John Smith", category: "business", image: "placeholder.jpg" },
+        { title: "Digital Painting", author: "Emily Jones", category: "art", image: "placeholder.jpg" },
+        // Add more courses as needed
+];
+
+function searchCourses() {
+    const searchInput = document.getElementById('searchInput').value.toLowerCase();
+    const filterCategory = document.getElementById('filterCategory').value;
+    const sortBy = document.getElementById('sortBy').value;
+
+    const filteredCourses = courses.filter(course => {
+        const matchesCategory = filterCategory === 'all' || course.category === filterCategory;
+        const matchesSearch = course.title.toLowerCase().includes(searchInput) || course.author.toLowerCase().includes(searchInput);
+        return matchesCategory && matchesSearch;
+    }).sort((a, b) => {
+        if (sortBy === 'title') {
+            return a.title.localeCompare(b.title);
+        } else if (sortBy === 'author') {
+            return a.author.localeCompare(b.author);
+        }
+    });
+
+    displayCourses(filteredCourses);
+}
+
+function displayCourses(courses) {
+    const coursesList = document.getElementById('coursesList');
+    coursesList.innerHTML = ''; // Clear current courses
+
+    courses.forEach(course => {
+        const card = document.createElement('div');
+        card.className = 'course-card';
+        card.innerHTML = `
+            <img src="${course.image}" alt="Course Image" class="course-image">
+            <div class="course-info">
+                <h3 class="course-title">${course.title}</h3>
+                <p class="course-author">${course.author}</p>
+            </div>
+        `;
+        coursesList.appendChild(card);
+    });
+}
+
+// Initial load
+searchCourses();
+
+</script>
+</body>
+</html>
