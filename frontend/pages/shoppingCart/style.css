@@ -39,6 +39,7 @@
     height: 7rem;
     display: grid;
     grid-template-columns: 4fr 7fr 1fr;
+    min-width: min-content;
 }
 
 .courseLI img {
