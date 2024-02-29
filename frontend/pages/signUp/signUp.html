@@ -16,17 +16,6 @@
 
 <body>
   <nav id="navbar"></nav>
-  <script>
-        document.addEventListener("DOMContentLoaded", function() {
-          fetch('../../resources/html/navbar.html')
-            .then(response => response.text())
-            .then(data => {
-              document.getElementById('navbar').innerHTML = data;
-            });
-        });
-    </script>
-
-
   <div class="signUpBar">
     <div class="signUpContainer">
       <h2 class="signUpLabel">Sign up</h2>
@@ -49,14 +38,7 @@
   </div>
 
     <footer id="footer"></footer>
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-          fetch('../../resources/html/footer.html')
-            .then(response => response.text())
-            .then(data => {
-              document.getElementById('footer').innerHTML = data;
-            });
-        });
-    </script>
+
+    <script src="resources/javascript/navbar-footer.js"></script>
 </body>
 </html>

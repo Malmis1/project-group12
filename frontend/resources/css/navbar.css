@@ -17,6 +17,7 @@
 
 .logo-link img {
     max-width: 100%;
+    min-width: 30px;
     height: auto;
 }
 
@@ -64,6 +65,10 @@
     left: 13px;
 }
 
+.right-items {
+
+}
+
 .menu-button {
     display: inline-block;
     background-color: #ffcc4a;
@@ -98,6 +103,29 @@
 
 }
 
+.popup-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #ffcc4a;
+    box-shadow: 0px 5px 7px #4a4a4a;
+    z-index: 2;
+}
+
+.popup-menu-item {
+    display: block;
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+    border-bottom: 1px solid #4a4a4a;
+}
+
+.popup-menu-item:last-child {
+    border-bottom: none;
+}
+
 /* Hide the small logo by default */
 .logo-small {
     display: none;
@@ -121,6 +149,12 @@
     }
 }
 
+@media (max-width: 1010px) {
+    .menu-search-container, .menu-search-bar {
+        width: auto; /* Full width on smaller screens */
+    }
+}
+
 @media (max-width: 768px) {
     /* Hide the large logo */
     .logo-large {
@@ -131,9 +165,17 @@
     .logo-small {
         display: block;
     }
+}
 
-    .menu-search-container, .menu-search-bar {
-        width: auto; /* Full width on smaller screens */
+@media (min-width: 661px) {
+    .popup-menu {
+        display: none !important; /* Force hiding the popup menu if the user has opened it on smaller screens */
+    }
+}
+
+@media (max-width: 660px) {
+    .navbar {
+        position: absolute;
     }
 
     /* Hide right items on smaller screens */
@@ -146,7 +188,29 @@
         display: block;
         margin-left: auto;
     }
+
 }
 
+@media (max-width: 410px) {
+    .menu-search-container, .menu-search-bar {
+        width: 130px; /* Full width on smaller screens */
+
+    }
+
+    .menu-search-bar::placeholder {
+      font-size: 14px;
+    }
+}
+
+@media (max-width: 356px) {
+    .menu-search-container, .menu-search-bar {
+        width: 90px; /* Full width on smaller screens */
+
+    }
+
+    .menu-search-bar::placeholder {
+      font-size: 14px;
+    }
+}
 
 
