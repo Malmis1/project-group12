@@ -7,6 +7,8 @@
     background-color: #EAEAEA;
     text-align: center;
     justify-content: space-between;
+    display: flex;
+    flex-direction: column;
 }
 
 .row {
