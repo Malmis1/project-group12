@@ -1,47 +1,72 @@
-// For enabling the categories when linked from another page
 document.addEventListener('DOMContentLoaded', () => {
-    console.log("DOM fully loaded and parsed");
-    // Get the query parameter value
+
+    const filterButton = document.querySelector('.filter-button');
+    const sidebar = document.querySelector('.category-sidebar');
+    const doneButton = document.getElementById('sidebarDoneButton');
+    const overlay = document.getElementById('siteOverlay');
+    const clearFilterButton = document.getElementById('clearFilter');
+
+    // Enables the category when linked from another page
     const params = new URLSearchParams(window.location.search);
     const category = params.get('category');
-
-    // If there's a matching category, check the corresponding checkbox
     if (category) {
         const checkbox = document.getElementById(category);
         if (checkbox) {
             checkbox.checked = true;
         }
     }
-    searchCourses();
-});
 
-// For toggling the filter sidebar
-document.addEventListener('DOMContentLoaded', function() {
-    const filterButton = document.querySelector('.filter-button');
-    const sidebar = document.querySelector('.category-sidebar');
-    sidebar.classList.toggle('sidebar-visible'); // Visible by default
-
-    filterButton.addEventListener('click', function() {
+    // Toggles the sidebar visibility when the filter button is clicked
+    filterButton.addEventListener('click', () => {
         sidebar.classList.toggle('sidebar-visible');
-    });
-});
-
-// For clearing the filters
-document.addEventListener('DOMContentLoaded', (event) => {
-    searchCourses(); // Calls it to set the initlalize state to clear
-});
-document.getElementById('clearFilter').addEventListener('click', clearFilters);
-function clearFilters() {
-    // Uncheck all checkboxes
-    const categoryCheckboxes = document.querySelectorAll('.category-option input[type="checkbox"]');
-    categoryCheckboxes.forEach(checkbox => {
-        checkbox.checked = false;
+        if (window.innerWidth <= 768) {
+            if (sidebar.classList.contains('sidebar-visible')) {
+                doneButton.style.display = 'block';
+                overlay.style.display = 'block';
+            } else {
+                doneButton.style.display = 'none';
+                overlay.style.display = 'none';
+            }
+        }
     });
 
-    // Hide the Clear Filter button
-    document.getElementById('clearFilter').style.display = 'none';
+     // Close the sidebar when the done button is clicked
+    doneButton.addEventListener('click', () => {
+        sidebar.classList.remove('sidebar-visible');
+        doneButton.style.display = 'none';
+        overlay.style.display = 'none';
+     });
 
-    // Call searchCourses to refresh the list without filters
+     // Close the sidebar when the overlay clicked
+    overlay.addEventListener('click', () => {
+         sidebar.classList.remove('sidebar-visible');
+         doneButton.style.display = 'none';
+         overlay.style.display = 'none';
+    });
+
+    // Listen for window resize events
+    window.addEventListener('resize', () => {
+        if (window.innerWidth > 768) {
+            doneButton.style.display = 'none';
+            overlay.style.display = 'none';
+        } else if (window.innerWidth <= 768 && sidebar.classList.contains('sidebar-visible')) {
+            doneButton.style.display = 'block';
+            overlay.style.display = 'block';
+        }
+    });
+
+    // Clears the filters
+    clearFilterButton.addEventListener('click', clearFilters);
+    function clearFilters() {
+        const categoryCheckboxes = document.querySelectorAll('.category-option input[type="checkbox"]');
+        categoryCheckboxes.forEach(checkbox => {
+            checkbox.checked = false;
+        });
+        clearFilterButton.style.display = 'none';
+
+        searchCourses();
+    }
+
+    // FOr initializing
     searchCourses();
-}
-
+});
