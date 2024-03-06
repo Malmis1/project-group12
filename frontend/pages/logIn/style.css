@@ -1,9 +1,8 @@
 body {
-    background-image: url('../../resources/images/background/sign-up-background.jpg'); /* The URL of the image file */
-    background-size: cover; /* Cover the entire page */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-attachment: fixed; /* The background is fixed with regard to the viewport */
-    background-position: center; /* Center the image on the page */
+    background-image: url('../../resources/images/background/sign-up-background.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
 }
 
 .Log-in {
@@ -72,6 +71,19 @@ body {
 
 .sign-up-link:hover {
     color: #555;
+}
+
+@media only screen and (max-width: 600px) {
+    body{
+    }
+
+    .Log-in-container {
+        width: 80%;
+    }
+
+    .login-input {
+        width: 80%; /* Full width for input fields on smaller screens */;
+    }
 }
 
 
