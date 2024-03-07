@@ -20,6 +20,12 @@
     gap: 1rem;
 }
 
+@media screen and (max-width: 650px) {
+    .mainRow {
+        grid-template-columns: 1fr;
+    }
+}
+
 .splitRow {
     display: flex;
     justify-content: space-around;

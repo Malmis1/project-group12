@@ -28,7 +28,7 @@
                 <button class="filter-button">
                     <span class="filter-text"></span> <!--Text is changed in the search-filles.js-->
                 </button>
-                <span id="clearFilter" class="clear-filter">Clear filters</span>
+                <span id="clearFilterTop" class="clear-filter">Clear filters</span>
 
                 <div class="sort-container">
                     <label class="sort-label">Sort by</label>
@@ -44,7 +44,12 @@
         </div>
 
         <aside class="category-sidebar sidebar-hidden">
-            <h2>Categories</h2>
+            <div id="filterResultsHeader">
+                <span class="results-count" id="resultsHeaderInSidebar">10000 results</span>
+                <span id="clearFilterInSidebar" class="clear-filter">Clear filters</span>
+            </div>
+
+            <h2>Category</h2>
             <form id="category-form">
                 <div class="category-option">
                     <input type="checkbox" id="InformationTechnologies" name="InformationTechnologies">
