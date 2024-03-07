@@ -35,11 +35,14 @@ function searchCourses() {
         });
 
     // Show or hide the clear filter span based on if a filter is selected
-    const clearFilterButton = document.getElementById('clearFilter');
+    const clearFilterTop = document.getElementById('clearFilterTop');
+    const clearFilterInSidebar = document.getElementById('clearFilterInSidebar')
     if (selectedCategories.length > 0) {
-        clearFilterButton.style.display = 'inline-block';
+        clearFilterTop.style.display = 'inline-block';
+        clearFilterInSidebar.style.display = 'inline-block';
     } else {
-        clearFilterButton.style.display = 'none';
+        clearFilterTop.style.display = 'none';
+        clearFilterInSidebar.style.display = 'none';
     }
 
     // Filter the courses based on selected categories
@@ -72,7 +75,9 @@ function searchCourses() {
     const selectedFiltersCount = selectedCategories.length;
     filterText.textContent = selectedFiltersCount > 0 ? `☰ Filter (${selectedFiltersCount})` : `☰ Filter`;
 
-    // Updates the results header
+    // Updates the results headers
+    const resultsHeaderInSidebar = document.getElementById('resultsHeaderInSidebar');
+    resultsHeaderInSidebar.textContent = `${filteredCourses.length} results`;
     resultsHeader.textContent = `${filteredCourses.length} results${searchQuery ? ` for “${searchQuery}”` : ''}`;
 
     displayCourses(filteredCourses);
