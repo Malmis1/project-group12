@@ -49,7 +49,7 @@ function initCartDropdown() {
                 const cartDropdown = document.querySelector('.cart-dropdown');
                 cartDropdown.style.visibility = 'hidden';
                 cartDropdown.style.opacity = '0';
-            }, 500);
+            }, 300);
         });
     }
 }
