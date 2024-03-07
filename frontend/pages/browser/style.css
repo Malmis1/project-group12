@@ -1,3 +1,19 @@
+.site-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+/* When the sidebar is visible, show the overlay */
+.category-sidebar.sidebar-visible ~ .site-overlay {
+    display: block;
+}
+
 .browser-content {
     margin-top: 50px;
     display: flex;
@@ -47,6 +63,7 @@
 }
 
 .filter-button {
+    margin-right: 10px;;
     padding: 14px 10px;
     width: 120px;
     justify-content: center;
@@ -63,7 +80,8 @@
 
 .clear-filter {
     font-size: 16px;
-    margin-left: 10px;
+    font-weight: bold;
+    margin-right: 10px;
     cursor: pointer;
 }
 
@@ -71,12 +89,12 @@
     text-decoration: underline;
 }
 
-
 .sort-label {
     margin-right: 10px;
     font-size: 18px;
 }
 
+/* Sidebar styles */
 .category-sidebar {
     display: none;
     flex: 1;
@@ -84,15 +102,6 @@
 
 .category-sidebar.sidebar-visible {
     display: block;
-}
-
-@media (max-width: 768px) {
-    .category-sidebar {
-        position: relative;
-        width: 100%;
-        max-width: 100%;
-        height: auto;
-    }
 }
 
 /* Custom checkbox styles */
@@ -109,12 +118,22 @@
 }
 
 .category-option label {
-    margin-left: 8px;
+    position: relative;
+    bottom: 3px;
+    margin-left: 6px;
     font-size: 18px;
     cursor: pointer;
 }
 
-/* Courses Styles */
+#filterResultsHeader {
+    display: none;
+}
+
+#sidebarDoneButton {
+    display: none;
+}
+
+/* Courses styles */
 .course-container {
     flex: 3;
     display: grid;
@@ -192,4 +211,102 @@
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
     text-align: center;
+}
+
+@media (max-width: 768px) {
+    /* Filter and sorting select styles */
+    .filter-button, .sort-container, .clear-filter. sort-label {
+        font-size: 14px;
+        padding: 10px 5px;
+    }
+
+    .sort-container {
+        position: relative;
+        right: 0px;
+        bottom: 10px;
+    }
+
+    .sort-label, .sort-select {
+        display: block;
+        margin: 0 auto;
+    }
+
+    /* Courses styles */
+    .course-container {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+}
+
+@media (max-width: 980px) {
+    /* Sidebar on smaller devices styles */
+    .category-sidebar {
+        display: none;
+        position: fixed;
+        right: -100%;
+        top: 0;
+        width: 80%;
+        max-width: 300px;
+        height: 100%;
+        background-color: #fbfaf9;
+        box-shadow: -2px 0 5px rgba(0,0,0,0.5);
+        transition: right 0.3s ease;
+        z-index: 1000;
+    }
+
+    .category-sidebar.sidebar-visible {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: fixed;
+        right: 0;
+        top: 0;
+        width: 80%;
+        max-width: 300px;
+        height: 100%;
+        background-color: #fbfaf9;
+        box-shadow: -2px 0 5px rgba(0,0,0,0.5);
+        transition: right 0.3s ease;
+        padding: 20px;
+        box-sizing: border-box;
+        z-index: 1000;
+    }
+
+    /* Results and clear filters header */
+     .category-sidebar.sidebar-visible #filterResultsHeader {
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        border-bottom: 1px solid #ccc;
+        width: 100%;
+    }
+
+    .results-count {
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    #clearFilterInSidebar {
+        margin-left: auto;
+        padding: 0px 30px;
+        width: auto;
+        right: 0px;
+    }
+
+    /* Done button styles */
+    .category-sidebar.sidebar-visible #sidebarDoneButton {
+        margin-top: auto;
+        background-color: #09435e;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        width: auto;
+        bottom: 20px;
+    }
+
+    .category-option label {
+        margin-left: 0px;
+        font-size: 15px;
+    }
+
 }
