@@ -6,6 +6,7 @@ body {
     background-position: center;
 }
 
+
 .signUpBar {
     display: flex;
     flex-direction: column;
@@ -16,17 +17,17 @@ body {
 
 .signUpLabel {
     display: block;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
     font-size: 35px;
     color: #062f42;
-
 
 }
 
 .signUpContainer {
-    width: 500px;
-    height: 378px;
+    width: 440px;
+    height: 330px;
     padding: 30px;
+    margin-top:75px;
     border: 1px solid black;
     background-color: white;
     border-radius: 8px;
@@ -62,4 +63,28 @@ body {
 .form-button:hover {
     background-color: #062f42;
     box-shadow: 0 0 0 0.8px black;
+
 }
+@media only screen and (max-width: 600px) {
+
+body{
+    background-image: none;
+}
+
+    .signUpBar{
+        height: auto;
+    }
+    .signUpContainer {
+        width: 60%;
+        margin-top: 100px;
+        margin-bottom: 20px;
+    }
+
+    .sign-input {
+        width: 80%;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+}
+
+

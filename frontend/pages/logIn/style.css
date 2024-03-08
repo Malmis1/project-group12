@@ -1,10 +1,10 @@
 body {
     background-image: url('../../resources/images/background/sign-up-background.jpg');
     background-size: cover;
+    background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
 }
-
 .Log-in {
     display: flex;
     flex-direction: column;
@@ -24,7 +24,7 @@ body {
 .Log-in-container {
     width: 500px;
     height: 378px;
-    padding-top: 30px;
+    margin-top: 45px;
     border: 1px solid black;
     background-color: white;
     border-radius: 8px;
@@ -75,18 +75,25 @@ body {
 
 @media only screen and (max-width: 600px) {
     body{
-        background: none;
+        background-image: none;
+    }
+    .Log-in {
+        height: auto;
     }
 
     .Log-in-container {
         width: 80%;
+        margin-top: 100px;
+        margin-bottom: 20px;
     }
 
     .login-input {
-        width: 80%; /* Full width for input fields on smaller screens */;
+        width: 80%;
         margin-right: 20px;
         margin-left: 20px;
     }
+
+
 }
 
 
