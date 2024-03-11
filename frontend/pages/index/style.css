@@ -98,7 +98,6 @@
     margin-right: 15px;
     margin-bottom: 15px;
     border: 1px solid #ccc;
-    padding: 10px;
     box-sizing: border-box;
 }
 
@@ -131,12 +130,9 @@
 }
 
 .categories-container .categories {
-    margin-left: 50px;
-    margin-right: 50px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
 }
 
 .category {
@@ -152,8 +148,10 @@
     cursor: pointer;
     padding: 0;
     display: inline-block;
-    width: min-content;
     background-color: #EAEAEA;
+    margin-top: 25px;
+    margin-right: 10px;
+    margin-left: 10px;
 }
 
 .category button img {
@@ -161,11 +159,44 @@
     height: 150px;
     padding: 40px;
     display: block;
+    margin: auto;
 }
 
 .category button img:hover  {
     transform: scale(1.1);
 }
+.course-label {
+    width: 200px;
+    text-align: center;
+    margin: auto;
+}
 
+@media (max-width: 710px) {
+    /* Most popular courses */
+    .slide {
+        width: 150px;
+    }
+
+    /* Most popular categories */
+    .category button img {
+        width: 100px;
+        height: 100px;
+        padding: 30px;
+    }
+}
+
+@media (max-width: 485px) {
+    /* Most popular categories */
+    .category button img {
+        width: 60px;
+        height: 60px;
+        padding: 20px;
+    }
+
+    .course-label {
+        font-size: 15px;
+        width: 100px;
+    }
+}
 
 
