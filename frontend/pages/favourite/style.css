@@ -12,8 +12,8 @@
 }
 
 .background-image {
-    width: 100%; /* Adjust as needed */
-    height: auto; /* Adjust as needed */
+    width: 100%;
+    height: auto;
     position: absolute;
     bottom: 0px;
     left: 0;
@@ -99,7 +99,7 @@
 
 @media only screen and (max-width: 768px) {
     .course-container {
-        grid-template-columns: 1fr; /* Set to a single column for small screens */
+        grid-template-columns: 1fr;
         margin-right: 20px;
         margin-left: 20px;
     }

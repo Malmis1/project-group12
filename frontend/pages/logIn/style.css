@@ -7,10 +7,9 @@ body {
 }
 .Log-in {
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content:center;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .Log-in-bar {
@@ -30,7 +29,6 @@ body {
     border-radius: 8px;
     text-align: center;
     box-shadow: 0 0 0 black;
-
 }
 
 .login-input {
@@ -95,6 +93,19 @@ body {
 
 
 }
+
+@media (min-width: 601px) and (max-width: 800px) {
+    body {
+        background-image: none;
+    }
+
+    .Log-in-container{
+        margin-top: 100px;
+        margin-bottom: 50px;
+    }
+
+}
+
 
 
 

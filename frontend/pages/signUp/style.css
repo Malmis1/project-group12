@@ -6,13 +6,11 @@ body {
     background-position: center;
 }
 
-
 .signUpBar {
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .signUpLabel {
@@ -20,14 +18,13 @@ body {
     margin-bottom: 30px;
     font-size: 35px;
     color: #062f42;
-
 }
 
 .signUpContainer {
     width: 440px;
     height: 330px;
     padding: 30px;
-    margin-top:75px;
+    margin-top: 75px;
     border: 1px solid black;
     background-color: white;
     border-radius: 8px;
@@ -39,14 +36,13 @@ body {
     display: block;
 }
 
-
-.formRow input{
+.formRow input {
     width: 90%;
     padding: 8px;
     margin-bottom: 20px;
     border: 1px solid #000;
     border-radius: 0.5rem;
-
+    align-content: center;
 }
 
 .form-button {
@@ -63,28 +59,34 @@ body {
 .form-button:hover {
     background-color: #062f42;
     box-shadow: 0 0 0 0.8px black;
-
-}
-@media only screen and (max-width: 600px) {
-
-body{
-    background-image: none;
 }
 
-    .signUpBar{
-        height: auto;
+
+/* Small screens (up to 600px) */
+@media (max-width: 600px) {
+    body {
+        background-image: none;
     }
+
     .signUpContainer {
-        width: 60%;
+        width: 73%;
         margin-top: 100px;
         margin-bottom: 20px;
     }
 
-    .sign-input {
-        width: 80%;
-        margin-right: 20px;
-        margin-left: 20px;
+    .formRow input {
+        width: 90%;
     }
 }
 
+@media (min-width: 601px) and (max-width: 800px) {
+    body {
+        background-image: none;
+    }
+
+    .signUpContainer{
+        margin-bottom: 50px;
+        margin-top: 100px;
+    }
+}
 
