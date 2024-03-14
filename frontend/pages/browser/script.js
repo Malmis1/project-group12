@@ -76,6 +76,6 @@ document.addEventListener('DOMContentLoaded', () => {
         searchCourses();
     }
 
-    // FOr initializing
+    // For initializing
     searchCourses();
 });
