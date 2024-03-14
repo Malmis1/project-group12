@@ -55,7 +55,8 @@ label.required {
 }
 
 li.splitRow,
-li.field {
+li.field,
+li.nonField {
     list-style-type: none;
     text-wrap: nowrap;
 }
