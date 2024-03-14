@@ -215,7 +215,7 @@
 
 @media (max-width: 768px) {
     /* Filter and sorting select styles */
-    .filter-button, .sort-container, .clear-filter. sort-label {
+    .filter-button, .sort-container, .clear-filter, .sort-label {
         font-size: 14px;
         padding: 10px 5px;
     }
