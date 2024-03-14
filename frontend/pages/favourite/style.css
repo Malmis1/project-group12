@@ -91,7 +91,7 @@
 
 @media only screen and (max-width: 600px) {
     .course-container {
-        grid-template-columns: 2fr;
+        grid-template-columns: 1fr;
         margin-right: 20px;
         margin-left: 20px;
     }
@@ -100,3 +100,12 @@
         margin-top: 80px;
     }
 }
+@media only screen and (max-width: 800px) {
+    .course-container {
+        grid-template-columns: 2fr;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+}
+

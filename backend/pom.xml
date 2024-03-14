@@ -12,7 +12,10 @@
 	<artifactId>courses</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>courses</name>
-	<description>Demo project for Spring Boot</description>
+	<description>Course project for Group 12 IDATA2306 Application-development and IDATA2301 Web-technology at NTNU</description>
+	<url>https://www.ntnu.edu/studies/courses/IDATA2304/2023</url>
+	<!-- <url>https://www.ntnu.no/studier/emner/IDATA2301#tab=omEmnet</url> -->
+
 	<properties>
 		<java.version>17</java.version>
 	</properties>
@@ -26,6 +29,19 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-core</artifactId>
+			<version>5.6.3.Final</version> <!-- Make sure to use the latest version -->
+		</dependency>
+
+		<!-- Hibernate Entity Manager (includes JPA) -->
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-entitymanager</artifactId>
+			<version>5.6.3.Final</version> <!-- Make sure to use the latest version -->
 		</dependency>
 	</dependencies>
 

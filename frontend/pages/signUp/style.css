@@ -90,3 +90,26 @@ body {
     }
 }
 
+@media (min-width: 1300px)and (max-height:700px ) {
+    body {
+        background-image: none;
+    }
+
+    .signUpContainer{
+        margin-top: 150px;
+        margin-bottom: 50px;
+    }
+
+}
+
+@media (max-width: 1248px){
+    body {
+        background-image: none;
+    }
+
+    .signUpContainer{
+        margin-top: 100px;
+        margin-bottom: 50px;
+    }
+
+}
