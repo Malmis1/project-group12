@@ -89,9 +89,6 @@ public class Course {
         return this.cost;
     }
 
-
-    // Create setters for categoryId, levelId and sessionId
-
     public void setCategoryId(Category categoryId) {
         this.categoryId = categoryId;
     }
