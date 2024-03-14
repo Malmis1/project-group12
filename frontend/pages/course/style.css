@@ -4,35 +4,45 @@
 
 /* Information section*/
 .information-section {
-    padding: 150px 50px 50px 50px;
     display: flex;
+    padding: 150px 50px 50px 50px;
     background-color: #062f42;
 }
 
-.information-section .left, .information-section .right {
-    padding: 10px;
+.information-section .right {
+    flex: 1;
+    padding-right: 20%;
 }
 
 .information-section .left {
-    flex: 1;
+    flex: 2;
+    padding-left: 10%;
 }
 
-.information-section .right {
-    flex: 3;
+.course-title {
+    color: white;
+    font-size: 50px;
+    margin: 0px;
 }
 
-.information-section .right .content {
-    padding-left: 100px;
-    padding-right: 100px;
+.short-description {
+    font-size: 20px;
+    color: white;
+}
+
+.keywords {
+    color: white;
 }
 
 .sidebar {
-    width: 25%;
+    width: 20%;
     position: fixed;
+    right: 10%;
     background-color: white;
-    padding: 5px;
-    text-align: center;
-    box-shadow: 0px 6px 9px black;
+    padding: 2px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
 }
 
 .sidebar img {
@@ -42,7 +52,170 @@
     margin-right: auto;
 }
 
-.information-section .button {
+.sidebar-content {
+    padding: 0px 30px 30px 30px;
+    text-align: left;
+}
+
+.sidebar h3 {
+    font-size: 30px;
+    font-weight: normal;
+}
+
+.sidebar h4 {
+    font-size: 15px;
+    font-weight: normal;
+
+}
+
+.sidebar h3 span {
+    font-weight: bold;
+}
+
+.sidebar-button {
+  font-size: 15px;
+  font-weight: bold;
+  background-color: #09435e;
+  color: white;
+  border: none;
+  padding: 15px 20px;
+  cursor: pointer;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+.sidebar-button:hover {
+  background-color: #062f42;
+}
+
+.sidebar h5 {
+    text-align: center;
+    font-weight: normal;
+}
+
+/* Content section */
+.content-section {
+    padding: 50px;;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.content-section .right {
+    flex: 1;
+    padding-right: 5%;
+}
+
+.content-section .left {
+    flex: 2;
+    padding-left: 10%;
+}
+
+.content-section p {
+    padding-bottom: 5%;
+}
+
+.description {
+    font-size: 17px;
+}
+
+/* Course Providers */
+#courseProviders {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: flex-start;
+    padding: 20px 0;
+}
+
+.provider {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-radius: 5px;
+    width: calc(33.333% - 60px); /* Three items per row, accounting for gap */
+    text-align: center;
+}
+
+.provider:nth-of-type(n+4) {
+    display: none;
+}
+
+.provider h3, .provider h4 {
+    margin: 10px 0;
+}
+
+.provider-button {
+    font-size: 15px;
+    font-weight: bold;
+    background-color: #09435e;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.provider-button:hover {
+    background-color: #062f42;
+}
+
+.show-more-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 10px;
+    background-color: #09435e;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+}
+
+.show-more-button i {
+    font-size: 20px;
+}
+
+/* Other similar courses (with same category) */
+.slider-container, .categories-container {
+    padding-right: 10%;
+    padding-left: 10%;
+    padding-bottom: 5%;
+}
+
+#courseSlider {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+.slide {
+    flex: 0 0 auto;
+    width: 200px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.slide img {
+    max-width: 100%;
+}
+
+.similar-course-title {
+  margin: 10px 0;
+  text-align: center;
+}
+
+.similar-course-button {
   background-color: #09435e;
   color: white;
   border: none;
@@ -50,50 +223,40 @@
   cursor: pointer;
   width: 100%;
   box-sizing: border-box;
-  margin-top: 10px;
 }
 
-.information-section .button:hover {
+.course-button:hover {
   background-color: #062f42;
 }
 
+@media (max-width: 1075px) {
+    /* Information section*/
+    .information-section {
+        padding: 150px 50px 50px 50px;
+        display: block;
+    }
 
-.course-title {
-    color: white;
-    font-size: 60px;
-    margin: 0px;
+    .sidebar {
+        margin: auto;
+        width: 80%;
+        position: relative;
+        right: 0;
+    }
+
+    /* Content section */
+    .content-section {
+        display: block;
+    }
 }
 
-.about-title {
-    padding-top: 50px;
-    color: white;
-}
+@media (max-width: 768px) {
+    /* Course Providers */
+    #courseProviders {
+        flex-direction: column;
+        align-items: center;
+    }
 
-.about {
-    font-size: 17px;
-    color: white;
-}
-
-/* Content section */
-.content-section {
-    padding: 50px;
-    display: flex;
-}
-
-.content-section .left, .content-section .right {
-    padding: 10px;
-
-}
-
-.content-section .left {
-    flex: 1;
-}
-
-.content-section .right {
-    flex: 3;
-}
-
-.content-section .right .content {
-    padding-left: 100px;
-    padding-right: 100px;
+    .provider {
+        width: 80%;
+    }
 }
