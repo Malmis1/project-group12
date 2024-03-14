@@ -166,6 +166,7 @@
     transform: scale(1.1);
 }
 .course-label {
+    padding-top: 5px;
     width: 200px;
     text-align: center;
     margin: auto;
