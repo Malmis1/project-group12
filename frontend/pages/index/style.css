@@ -168,6 +168,7 @@
     margin-top: 25px;
     margin-right: 10px;
     margin-left: 10px;
+    transition: 0s;
 }
 
 .category button img {
@@ -179,8 +180,11 @@
 }
 
 .category button img:hover  {
+    background-color: #EAEAEA;
     transform: scale(1.1);
+    border-radius: 5px;
 }
+
 .course-label {
     padding-top: 5px;
     width: 200px;

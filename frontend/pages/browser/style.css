@@ -139,7 +139,7 @@
 .course-container {
     flex: 3;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
     gap: 20px;
 }
 
@@ -148,7 +148,6 @@
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
-    max-width: 300px;
     text-align: center;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
