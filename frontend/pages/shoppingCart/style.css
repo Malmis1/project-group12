@@ -28,11 +28,7 @@
 .checkoutBtn {
     position: relative;
     bottom: 0;
-    background-color: #09435e;
-    color: white;
-    border: none;
     padding: 1rem 2rem;
-    cursor: pointer;
     box-sizing: border-box;
 }
 

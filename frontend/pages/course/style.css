@@ -74,19 +74,10 @@
 .sidebar-button {
   font-size: 15px;
   font-weight: bold;
-  background-color: #09435e;
-  color: white;
-  border: none;
   padding: 15px 20px;
-  cursor: pointer;
   width: 100%;
   box-sizing: border-box;
   margin-top: 10px;
-  border-radius: 5px;
-}
-
-.sidebar-button:hover {
-  background-color: #062f42;
 }
 
 .sidebar h5 {
@@ -149,19 +140,10 @@
 .provider-button {
     font-size: 15px;
     font-weight: bold;
-    background-color: #09435e;
-    color: white;
-    border: none;
     padding: 10px 20px;
-    cursor: pointer;
     width: 100%;
     box-sizing: border-box;
     margin-top: 10px;
-    border-radius: 5px;
-}
-
-.provider-button:hover {
-    background-color: #062f42;
 }
 
 .show-more-button {
@@ -170,9 +152,6 @@
     align-items: center;
     margin: auto;
     padding: 10px;
-    background-color: #09435e;
-    color: white;
-    border: none;
     border-radius: 50%;
     cursor: pointer;
     width: 40px;
@@ -224,20 +203,11 @@
 }
 
 .similar-course-button {
-    background-color: #09435e;
-    color: white;
-    border: none;
     padding: 10px 20px;
     margin-bottom: 15px;
-    cursor: pointer;
-    width: 80%;
+    width: 85%;
     margin-left: auto;
     margin-right: auto;
-    border-radius: 5px;
-}
-
-.similar-course-button:hover {
-    background-color: #062f42;
 }
 
 /* Scrollbar customization for aesthetics */

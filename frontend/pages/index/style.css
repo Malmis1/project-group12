@@ -120,20 +120,11 @@
 }
 
 .course-button {
-    background-color: #09435e;
-    color: white;
-    border: none;
     padding: 10px 20px;
     margin-bottom: 15px;
-    cursor: pointer;
     width: 85%;
     margin-left: auto;
     margin-right: auto;
-    border-radius: 5px;
-}
-
-.course-button:hover {
-    background-color: #062f42;
 }
 
 /* Scrollbar customization for aesthetics */
@@ -169,11 +160,8 @@
 }
 
 .category button {
-    border: none;
-    border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     background-color: transparent;
-    cursor: pointer;
     padding: 0;
     display: inline-block;
     background-color: #EAEAEA;

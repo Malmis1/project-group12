@@ -60,6 +60,7 @@
 
 .sort-select:hover {
     background-color: #EAEAEA;
+    transition: 0.3s;
 }
 
 .filter-button {
@@ -67,6 +68,7 @@
     padding: 14px 10px;
     width: 120px;
     justify-content: center;
+    color: black;
 }
 
 .filter-button:hover {
@@ -162,19 +164,11 @@
 }
 
 .course-button {
-    background-color: #09435e;
-    color: white;
-    border: none;
     padding: 10px 20px;
-    cursor: pointer;
     width: 100%;
     box-sizing: border-box;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-}
-
-.course-button:hover {
-    background-color: #062f42;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
 }
 
 .image-box {
@@ -296,11 +290,7 @@
     /* Done button styles */
     .category-sidebar.sidebar-visible #sidebarDoneButton {
         margin-top: auto;
-        background-color: #09435e;
-        color: white;
-        border: none;
         padding: 10px 20px;
-        cursor: pointer;
         width: auto;
         bottom: 20px;
     }

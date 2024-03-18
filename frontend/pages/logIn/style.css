@@ -44,11 +44,7 @@ body {
 .Log-in-button {
     width: 80%;
     padding: 12px ;
-    background-color: #09435e;
-    color: white;
     border-radius: 25px;
-    cursor: pointer;
-    border: none;
 }
 
 .forgot-password-link {

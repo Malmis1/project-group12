@@ -41,17 +41,9 @@
 }
 
 .course-button {
-    background-color: #09435e;
-    color: white;
-    border: none;
     padding: 10px 20px;
-    cursor: pointer;
     width: 100%;
     box-sizing: border-box;
-}
-
-.course-button:hover {
-    background-color: #062f42;
 }
 
 .image-box {
