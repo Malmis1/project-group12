@@ -50,6 +50,7 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
+    border-radius: 5px;
 }
 
 .sidebar-content {
@@ -60,6 +61,8 @@
 .sidebar h3 {
     font-size: 30px;
     font-weight: normal;
+    margin-top: 15px;
+    margin-bottom: 0px;
 }
 
 .sidebar h4 {
