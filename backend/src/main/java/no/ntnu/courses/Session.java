@@ -1,9 +1,7 @@
 package no.ntnu.courses;
-import javax.persistence.*;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.Column;
+
+import jakarta.persistence.*;
+
 import java.util.Date;
 
 @Entity
@@ -22,20 +20,20 @@ public class Session {
         return this.sessionId;
     }
 
-    public Date getDateFrom() {
-        return this.dateFrom;
-    }
-
-    public Date getDateTo() {
-        return this.dateTo;
-    }
-
     public void setSessionId(int sessionId) {
         this.sessionId = sessionId;
     }
 
+    public Date getDateFrom() {
+        return this.dateFrom;
+    }
+
     public void setDateFrom(Date dateFrom) {
         this.dateFrom = dateFrom;
+    }
+
+    public Date getDateTo() {
+        return this.dateTo;
     }
 
     public void setDateTo(Date dateTo) {

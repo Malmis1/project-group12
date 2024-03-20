@@ -1,9 +1,7 @@
 package no.ntnu.courses;
-import javax.persistence.*;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.Column;
+
+import jakarta.persistence.*;
+
 
 @Entity
 public class Level {
@@ -18,12 +16,12 @@ public class Level {
         return this.levelId;
     }
 
-    public String getLevel() {
-        return this.level;
-    }
-
     public void setLevelId(int levelId) {
         this.levelId = levelId;
+    }
+
+    public String getLevel() {
+        return this.level;
     }
 
     public void setLevel(String level) {

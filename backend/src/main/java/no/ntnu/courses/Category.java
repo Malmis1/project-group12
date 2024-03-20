@@ -1,9 +1,7 @@
 package no.ntnu.courses;
-import javax.persistence.*;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.Column;
+
+import jakarta.persistence.*;
+
 
 @Entity
 public class Category {
@@ -18,12 +16,12 @@ public class Category {
         return this.categoryId;
     }
 
-    public String getCategory() {
-        return this.category;
-    }
-
     public void setCategoryId(int categoryId) {
         this.categoryId = categoryId;
+    }
+
+    public String getCategory() {
+        return this.category;
     }
 
     public void setCategory(String category) {

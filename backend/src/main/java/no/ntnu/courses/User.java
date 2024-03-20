@@ -1,9 +1,7 @@
 package no.ntnu.courses;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.Column;
+
+import jakarta.persistence.*;
+
 
 @Entity
 public class User {
@@ -31,36 +29,36 @@ public class User {
         return this.username;
     }
 
-    public String getPassword() {
-        return this.password;
-    }
-
-    public String getEmail() {
-        return this.email;
-    }
-
-    public boolean getIsAdmin() {
-        return this.isAdmin;
-    }
-
-    public void setId(int userId) {
-        this.userId = userId;
-    }
-
     public void setUsername(String username) {
         this.username = username;
+    }
+
+    public String getPassword() {
+        return this.password;
     }
 
     public void setPassword(String password) {
         this.password = password;
     }
 
+    public String getEmail() {
+        return this.email;
+    }
+
     public void setEmail(String email) {
         this.email = email;
     }
 
+    public boolean getIsAdmin() {
+        return this.isAdmin;
+    }
+
     public void setIsAdmin(boolean isAdmin) {
         this.isAdmin = isAdmin;
+    }
+
+    public void setId(int userId) {
+        this.userId = userId;
     }
 }
 

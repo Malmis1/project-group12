@@ -1,9 +1,6 @@
 package no.ntnu.courses;
-import javax.persistence.*;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.Column;
+
+import jakarta.persistence.*;
 
 @Entity
 public class Course {
@@ -49,84 +46,84 @@ public class Course {
         return this.categoryId;
     }
 
-    public Level getLevelId() {
-        return this.levelId;
-    }
-
-    public Session getSessionId() {
-        return this.sessionId;
-    }
-
-    public int getCourseId() {
-        return this.courseId;
-    }
-
-    public String getTitle() {
-        return this.title;
-    }
-
-    public String getKeywords() {
-        return this.keywords;
-    }
-
-    public float getCourseSize() {
-        return this.courseSize;
-    }
-
-    public float getHoursPerWeek() {
-        return this.hoursPerWeek;
-    }
-
-    public String getRelatedCertifications() {
-        return this.relatedCertifications;
-    }
-
-    public String getDescription() {
-        return this.description;
-    }
-
-    public float getCost() {
-        return this.cost;
-    }
-
     public void setCategoryId(Category categoryId) {
         this.categoryId = categoryId;
+    }
+
+    public Level getLevelId() {
+        return this.levelId;
     }
 
     public void setLevelId(Level levelId) {
         this.levelId = levelId;
     }
 
+    public Session getSessionId() {
+        return this.sessionId;
+    }
+
     public void setSessionId(Session sessionId) {
         this.sessionId = sessionId;
+    }
+
+    public int getCourseId() {
+        return this.courseId;
     }
 
     public void setCourseId(int courseId) {
         this.courseId = courseId;
     }
 
+    public String getTitle() {
+        return this.title;
+    }
+
     public void setTitle(String title) {
         this.title = title;
+    }
+
+    public String getKeywords() {
+        return this.keywords;
     }
 
     public void setKeywords(String keywords) {
         this.keywords = keywords;
     }
 
+    public float getCourseSize() {
+        return this.courseSize;
+    }
+
     public void setCourseSize(float courseSize) {
         this.courseSize = courseSize;
+    }
+
+    public float getHoursPerWeek() {
+        return this.hoursPerWeek;
     }
 
     public void setHoursPerWeek(float hoursPerWeek) {
         this.hoursPerWeek = hoursPerWeek;
     }
 
+    public String getRelatedCertifications() {
+        return this.relatedCertifications;
+    }
+
     public void setRelatedCertifications(String relatedCertifications) {
         this.relatedCertifications = relatedCertifications;
     }
 
+    public String getDescription() {
+        return this.description;
+    }
+
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    public float getCost() {
+        return this.cost;
     }
 
     public void setCost(float cost) {
