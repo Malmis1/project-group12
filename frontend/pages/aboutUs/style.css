@@ -31,7 +31,7 @@
 }
 
 .content-image {
-    width: 20vw;
+    width: 25vw;
     max-width:
     height: auto;
     margin: 0 20px;
@@ -77,8 +77,8 @@ section {
     }
 }
 
-@media (min-width: 800) {
+@media (min-width: 2000px) {
     .content-image {
-        width: 200px;
+        width: 300px;
     }
 }
