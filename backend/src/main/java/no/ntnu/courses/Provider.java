@@ -5,16 +5,21 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.ManyToMany;
+
+import java.util.HashSet;
+import java.util.Set;
+
 
 @Entity
 public class Provider {
+    @ManyToMany(mappedBy = "providers")
+    private final Set<Course> courses = new HashSet<>();
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int providerId;
-
     @Column(nullable = false)
     private String provider;
-
     @Column(nullable = false)
     private float fee;
 

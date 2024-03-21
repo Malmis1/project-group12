@@ -6,43 +6,44 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
+import jakarta.persistence.JoinTable;
+import jakarta.persistence.ManyToMany;
 import jakarta.persistence.ManyToOne;
+
+import java.util.HashSet;
+import java.util.Set;
 
 @Entity
 public class Course {
+    @ManyToMany
+    @JoinTable(
+            name = "course_provider",
+            joinColumns = @JoinColumn(name = "course_id"),
+            inverseJoinColumns = @JoinColumn(name = "provider_id"))
+    private final Set<Provider> providers = new HashSet<>();
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int courseId;
-
     @Column(nullable = false, unique = true)
     private String title;
-
     @Column(nullable = false)
     private String keywords;
-
     @Column(nullable = false)
     private float courseSize;
-
     @Column(nullable = false)
     private float hoursPerWeek;
-
     @Column(nullable = false)
     private String relatedCertifications;
-
     @Column(nullable = false)
     private String description;
-
     @Column(nullable = false)
     private float cost;
-
     @ManyToOne
     @JoinColumn(name = "categoryId", nullable = false)
     private Category categoryId;
-
     @ManyToOne
     @JoinColumn(name = "levelId", nullable = false)
     private Level levelId;
-
     @ManyToOne
     @JoinColumn(name = "sessionId", nullable = false)
     private Session sessionId;
