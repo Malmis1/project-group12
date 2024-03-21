@@ -1,6 +1,6 @@
 .navbar {
     background-color: #ffcc4a;
-    box-shadow: 0px 5px 7px #4a4a4a;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
     position: fixed;
     top: 0;
     width: 100%;
@@ -65,10 +65,6 @@
     left: 13px;
 }
 
-.right-items {
-
-}
-
 .menu-button {
     display: inline-block;
     background-color: #ffcc4a;
@@ -114,7 +110,7 @@
     left: 0;
     width: 100%;
     background-color: #ffcc4a;
-    box-shadow: 0px 5px 7px #4a4a4a;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
     z-index: 2;
 }
 
@@ -233,7 +229,7 @@
     width: 200px;
     top: 230%;
     background-color: #ffcc4a;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
     z-index: 5;
     border-radius: 3px;
     padding: 5px;

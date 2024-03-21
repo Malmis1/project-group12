@@ -60,6 +60,7 @@
 
 .sort-select:hover {
     background-color: #EAEAEA;
+    transition: 0.3s;
 }
 
 .filter-button {
@@ -67,6 +68,7 @@
     padding: 14px 10px;
     width: 120px;
     justify-content: center;
+    color: black;
 }
 
 .filter-button:hover {
@@ -137,7 +139,7 @@
 .course-container {
     flex: 3;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
     gap: 20px;
 }
 
@@ -146,16 +148,14 @@
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
-    max-width: 300px;
-    border: 1px solid #ccc;
     text-align: center;
-    border-radius: 5px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 .course-image {
     width: 100%;
-    height: auto;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
 
 .course-title {
@@ -163,17 +163,11 @@
 }
 
 .course-button {
-    background-color: #09435e;
-    color: white;
-    border: none;
     padding: 10px 20px;
-    cursor: pointer;
     width: 100%;
     box-sizing: border-box;
-}
-
-.course-button:hover {
-    background-color: #062f42;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
 }
 
 .image-box {
@@ -295,11 +289,7 @@
     /* Done button styles */
     .category-sidebar.sidebar-visible #sidebarDoneButton {
         margin-top: auto;
-        background-color: #09435e;
-        color: white;
-        border: none;
         padding: 10px 20px;
-        cursor: pointer;
         width: auto;
         bottom: 20px;
     }

@@ -1,9 +1,10 @@
 package no.ntnu.courses;
-import javax.persistence.*;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.Column;
+
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
 
 @Entity
 public class Provider {
@@ -21,20 +22,20 @@ public class Provider {
         return this.providerId;
     }
 
-    public String getProvider() {
-        return this.provider;
-    }
-
-    public float getFee() {
-        return this.fee;
-    }
-
     public void setProviderId(int providerId) {
         this.providerId = providerId;
     }
 
+    public String getProvider() {
+        return this.provider;
+    }
+
     public void setProvider(String provider) {
         this.provider = provider;
+    }
+
+    public float getFee() {
+        return this.fee;
     }
 
     public void setFee(float fee) {

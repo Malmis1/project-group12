@@ -1,9 +1,13 @@
 package no.ntnu.courses;
-import javax.persistence.*;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.Column;
+
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
+
 import java.util.Date;
 
 @Entity
@@ -50,92 +54,92 @@ public class Checkout {
         return this.userId;
     }
 
-    public int getCheckoutId() {
-        return this.checkoutId;
-    }
-
-    public String getCountry() {
-        return this.country;
-    }
-
-    public String getStreetAddress() {
-        return this.streetAddress;
-    }
-
-    public int getPostalCode() {
-        return this.postalCode;
-    }
-
-    public String getPhoneNumber() {
-        return this.phoneNumber;
-    }
-
-    public String getEmailAddress() {
-        return this.emailAddress;
-    }
-
-    public String getCardNumber() {
-        return this.cardNumber;
-    }
-
-    public Date getExpirationDate() {
-        return this.expirationDate;
-    }
-
-    public int getCvv() {
-        return this.cvv;
-    }
-
-    public double getTotalPrice() {
-        return this.totalPrice;
-    }
-
-    public String getPaymentMethod() {
-        return this.paymentMethod;
-    }
-
     public void setUserId(User userId) {
         this.userId = userId;
+    }
+
+    public int getCheckoutId() {
+        return this.checkoutId;
     }
 
     public void setCheckoutId(int checkoutId) {
         this.checkoutId = checkoutId;
     }
 
+    public String getCountry() {
+        return this.country;
+    }
+
     public void setCountry(String country) {
         this.country = country;
+    }
+
+    public String getStreetAddress() {
+        return this.streetAddress;
     }
 
     public void setStreetAddress(String streetAddress) {
         this.streetAddress = streetAddress;
     }
 
+    public int getPostalCode() {
+        return this.postalCode;
+    }
+
     public void setPostalCode(int postalCode) {
         this.postalCode = postalCode;
+    }
+
+    public String getPhoneNumber() {
+        return this.phoneNumber;
     }
 
     public void setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
     }
 
+    public String getEmailAddress() {
+        return this.emailAddress;
+    }
+
     public void setEmailAddress(String emailAddress) {
         this.emailAddress = emailAddress;
+    }
+
+    public String getCardNumber() {
+        return this.cardNumber;
     }
 
     public void setCardNumber(String cardNumber) {
         this.cardNumber = cardNumber;
     }
 
+    public Date getExpirationDate() {
+        return this.expirationDate;
+    }
+
     public void setExpirationDate(Date expirationDate) {
         this.expirationDate = expirationDate;
+    }
+
+    public int getCvv() {
+        return this.cvv;
     }
 
     public void setCvv(int cvv) {
         this.cvv = cvv;
     }
 
+    public double getTotalPrice() {
+        return this.totalPrice;
+    }
+
     public void setTotalPrice(double totalPrice) {
         this.totalPrice = totalPrice;
+    }
+
+    public String getPaymentMethod() {
+        return this.paymentMethod;
     }
 
     public void setPaymentMethod(String paymentMethod) {

@@ -21,6 +21,7 @@
     padding: 20px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
                 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
 }
 
 .hero-quote {
@@ -73,7 +74,7 @@
     padding: 10px 20px;
     border-radius: 25px;
     text-decoration: none;
-    transition: background-color 0.5s;
+    transition: background-color 0.3s;
 }
 
 .explore-courses-link:hover {
@@ -86,42 +87,58 @@
     margin-top: 75px;
 }
 
-#course-slider {
-    display: flex;
-    overflow-x: auto;
+.course-slider {
+    padding-bottom: 20px;
     scroll-behavior: smooth;
+    overflow-x: auto;
+    display: flex;
+    gap: 15px;
+    flex-wrap: nowrap;
+    box-sizing: content-box;
+    -webkit-overflow-scrolling: touch;
 }
 
 .slide {
     flex: 0 0 auto;
-    width: 300px;
-    margin-right: 15px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
+    width: 250px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-align: center;
+    overflow: hidden;
 }
 
-.slide img {
-    max-width: 100%;
+.course-image {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
 
 .course-title {
-  margin: 10px 0;
-  text-align: center;
+    margin: 10px 0;
+    font-size: 18px;
 }
 
 .course-button {
-  background-color: #09435e;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
-  width: 100%;
-  box-sizing: border-box;
+    padding: 10px 20px;
+    margin-bottom: 15px;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.course-button:hover {
-  background-color: #062f42;
+/* Scrollbar customization for aesthetics */
+.course-slider::-webkit-scrollbar {
+    height: 10px;
+}
+
+.course-slider::-webkit-scrollbar-thumb {
+    background-color: #062f42;
+    border-radius: 4px;
+}
+
+.course-slider::-webkit-scrollbar-track {
+    background-color: #f0f0f0;
 }
 
 /* Most popular categories */
@@ -143,15 +160,15 @@
 }
 
 .category button {
-    border: none;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     background-color: transparent;
-    cursor: pointer;
     padding: 0;
     display: inline-block;
     background-color: #EAEAEA;
     margin-top: 25px;
     margin-right: 10px;
     margin-left: 10px;
+    transition: 0s;
 }
 
 .category button img {
@@ -163,8 +180,11 @@
 }
 
 .category button img:hover  {
+    background-color: #EAEAEA;
     transform: scale(1.1);
+    border-radius: 5px;
 }
+
 .course-label {
     padding-top: 5px;
     width: 200px;

@@ -10,7 +10,7 @@
 
 ];
 
-// Initializng
+// Initializing
 document.addEventListener('DOMContentLoaded', (event) => {
     const categoryForm = document.getElementById('category-form');
     if (categoryForm) {
@@ -46,7 +46,7 @@ function searchCourses() {
     }
 
     // Filter the courses based on selected categories
-    // If rhere are no categories are selected, display all courses
+    // If there are no categories are selected, display all courses
     let filteredCourses = courses.filter(course => {
         return selectedCategories.length === 0 || selectedCategories.includes(course.category);
     });

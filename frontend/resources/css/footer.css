@@ -5,7 +5,7 @@
   margin-top: 0;
 }
 
-.footer ul, h3 {
+.footer ul, .footer h3 {
   padding:0;
   list-style:none;
   text-align:center;
