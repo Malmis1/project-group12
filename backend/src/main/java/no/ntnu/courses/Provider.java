@@ -39,6 +39,10 @@ public class Provider {
         this.provider = provider;
     }
 
+    public Set<Course> getCourses() {
+        return this.courses;
+    }
+
     public float getFee() {
         return this.fee;
     }

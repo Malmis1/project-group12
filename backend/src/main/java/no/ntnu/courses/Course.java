@@ -20,7 +20,7 @@ public class Course {
             name = "course_provider",
             joinColumns = @JoinColumn(name = "course_id"),
             inverseJoinColumns = @JoinColumn(name = "provider_id"))
-    private final Set<Provider> providers = new HashSet<>();
+    private Set<Provider> providers = new HashSet<>();
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int courseId;
@@ -86,6 +86,14 @@ public class Course {
 
     public void setTitle(String title) {
         this.title = title;
+    }
+
+    public Set<Provider> getProviders() {
+        return this.providers;
+    }
+
+    public void setProviders(Set<Provider> providers) {
+        this.providers = providers;
     }
 
     public String getKeywords() {
