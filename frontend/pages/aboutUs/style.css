@@ -27,12 +27,8 @@
     flex-direction: row-reverse;
 }
 
-.img-right {
-}
-
 .content-image {
     width: 25vw;
-    max-width:
     height: auto;
     margin: 0 20px;
 }
