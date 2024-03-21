@@ -8,4 +8,4 @@ This project involves creating a marketplace website with basic functionality fo
 
 ## Running the spring application
 
-The spring application can be run by running the `main` method in the [CoursesApplication](./backend\src\main\java\no\ntnu\courses\CoursesApplication.java) class.
+The spring application can be run by running the `main` method in the [CoursesApplication](./backend/src/main/java/no/ntnu/courses/CoursesApplication.java) class.
